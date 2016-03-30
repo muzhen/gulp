@@ -35,7 +35,7 @@ var less = require('gulp-less'),
 	gulp = require('gulp');
 
 gulp.task('less', function () {
-  return gulp.src('assets/less/**/*.less')
+  return gulp.src('assets/less/*.less')
     .pipe(less())
     .pipe(gulp.dest('src/css'));
 });
@@ -44,22 +44,16 @@ gulp.task('default', ['less']);
 ```
 
 and the result is:
-```html
+```css
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-　　<h1>这是 header 的内容</h1>
-  <label>haoxin</label>
-<label>12345</label>
-<strong>facebook.com/include</strong>
-<strong>twitter.com/include</strong>
-    <h1>这是 footer 的内容</h1>
-</body>
-</html>
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
 
 ```
