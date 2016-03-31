@@ -1,59 +1,47 @@
-### gulp-less
-a plugin of gulp for file include
+### mzUI
+>任务复用 初步完成
 
-### install
+### 初始化，根据package.json文件安装项目用到的gulp插件
 ```bash
-npm install gulp-less  --save-dev
+npm install 
 ```
 ### 运行
 
 * 下载下来，输入 gulp ,会生成src文件夹
 
-### example
-
-main.less
-```less
-@base: #f938ab;
-
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
-}
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
-}
-.box {
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
-}
+###项目目录安排
 ```
+mzUI(项目名称)
+|–.git 
+|–node_modules 本项目用到的gulp插件
+|–dist 发布环境
+　　|–assets
+　　　　|–css 样式文件（合并 压缩）
+　　　　|–images 图片文件(压缩图片)
+　　　　|–js js文件(校验 合并 压缩 )
+　　|–pages
+　　	|-index.html 静态文件(压缩html)
 
-gulpfile.js
-```js
-var less = require('gulp-less'),
-	gulp = require('gulp');
+|–src 生产环境
+　　|–assets
+　　　　|–less less文件
+　　　　|–images 图片文件
+　　　　|–js js文件
+　　　　|–css css文件
+　　|–pages
+　　　　|–uidemo  
+　　　　|–components  
+　　　	    |–modal 弹窗文件
+　　　　    |–tab tab切换文件
+　　　    　|–foem 表单文件
+　　　    　|–table 表格文件
+　　    |–test
+　　|–tasks
+　　　　|–  
+　　　　|–    
 
-gulp.task('less', function () {
-  return gulp.src('assets/less/*.less')
-    .pipe(less())
-    .pipe(gulp.dest('src/css'));
-});
+|–gulpfile.js gulp任务文件
 
-gulp.task('default', ['less']);
-```
-
-and the result is:
-```css
-
-.box {
-  color: #fe33ac;
-  border-color: #fdcdea;
-}
-.box div {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
+|–pacjage.json 项目信息文件
 
 ```
