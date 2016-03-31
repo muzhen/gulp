@@ -1,0 +1,608 @@
+@@include('../include/head.html')
+@@include('../include/settings-pane.html')
+
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		
+		@@include('../include/sidebar-menu.html')
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Calendar</h1>
+					<p class="description">Events management calendar</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="extra-gallery.html">Extra</a>
+								</li>
+							<li class="active">
+						
+										<strong>Calendar</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<script type="text/javascript">
+			// Calendar Initialization
+			jQuery(document).ready(function($)
+			{
+				// Form to add new event
+				var colors = ['red', 'blue', 'primary', 'success', 'warning', 'info', 'danger', 'purple', 'black', 'gray'];
+				
+				$("#add_event_form").on('submit', function(ev)
+				{
+					ev.preventDefault();
+					
+					var $event = $(this).find('.form-control'),
+						event_name = $event.val().trim();
+					
+					if(event_name.length >= 3)
+					{
+						var color = colors[Math.floor(Math.random()*colors.length)];
+						
+						// Create Event Entry
+						$("#events-list").append(
+							'<li>\
+								<a href="#" data-event-class="event-color-' + color + '">\
+									<span class="badge badge-' + color + ' badge-roundless upper">' + event_name + '</span>\
+								</a>\
+							</li>'
+						);
+						
+						
+						// Reset draggable
+						$("#events-list li").draggable({
+							revert: true,
+							revertDuration: 50,
+							zIndex: 999
+						});
+						
+						// Reset input
+						$event.val('').focus();
+					}
+					else
+					{
+						$event.focus();
+					}
+				});
+				
+				
+				// Calendar Initialization
+				$('#calendar').fullCalendar({
+					header: {
+						left: 'title',
+						center: '',
+						right: 'month,agendaWeek,agendaDay prev,next'
+					},
+					buttonIcons: {
+						prev: 'prev fa-angle-left',
+						next: 'next fa-angle-right',
+					},
+					defaultDate: '2014-09-12',
+					editable: true,
+					eventLimit: true,
+					events: [
+						{
+							title: 'All Day Event',
+							start: '2014-09-01'
+						},
+						{
+							title: 'Long Event',
+							start: '2014-09-07',
+							end: '2014-09-10'
+						},
+						{
+							id: 999,
+							title: 'Repeating Event',
+							start: '2014-09-09T16:00:00'
+						},
+						{
+							id: 999,
+							title: 'Repeating Event',
+							start: '2014-09-16T16:00:00'
+						},
+						{
+							title: 'Conference',
+							start: '2014-09-11',
+							end: '2014-09-13'
+						},
+						{
+							title: 'Meeting',
+							start: '2014-09-12T10:30:00',
+							end: '2014-09-12T12:30:00'
+						},
+						{
+							title: 'Lunch',
+							start: '2014-09-12T12:00:00'
+						},
+						{
+							title: 'Meeting',
+							start: '2014-09-12T14:30:00'
+						},
+						{
+							title: 'Happy Hour',
+							start: '2014-09-12T17:30:00'
+						},
+						{
+							title: 'Dinner',
+							start: '2014-09-12T20:00:00'
+						},
+						{
+							title: 'Birthday Party',
+							start: '2014-09-13T07:00:00'
+						},
+						{
+							title: 'Click for Google',
+							url: 'http://google.com/',
+							start: '2014-09-28'
+						}
+					],
+					droppable: true,
+					drop: function(date) {
+						
+						var $event = $(this).find('a'),
+							eventObject = {
+								title: $event.find('.badge').text(),
+								start: date,
+								className: $event.data('event-class')
+							};
+						
+						$('#calendar').fullCalendar('renderEvent', eventObject, true);
+						
+						// Remove event from list
+						$(this).remove();
+					}
+				});
+				
+				
+				// Draggable Events
+				$("#events-list li").draggable({
+					revert: true,
+					revertDuration: 50,
+					zIndex: 999
+				});
+			});
+			</script>
+			
+			<section class="calendar-env">
+				
+				<div class="col-sm-9 calendar-right">
+					
+					<div class="calendar-main">
+						
+						<div id="calendar"></div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-3 calendar-left">
+					
+					<div class="calendar-sidebar">
+						
+						<form method="post" id="add_event_form">
+							<input type="text" class="form-control" placeholder="Add new event..." />
+						</form>
+						
+						<br />
+							
+						<ul class="list-unstyled calendar-list" id="events-list">
+							<li class="list-header">Drago to the calendar</li>
+							<li>
+								<a href="#" data-event-class="event-color-success">
+									<span class="badge badge-success badge-roundless upper">Meeting</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-event-class="event-color-purple">
+									<span class="badge badge-purple badge-roundless upper">Relax</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-event-class="event-color-red">
+									<span class="badge badge-red badge-roundless upper">Going Out</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-event-class="event-color-blue">
+									<span class="badge badge-blue badge-roundless upper">Meal</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-event-class="event-color-primary">
+									<span class="badge badge-warning badge-roundless upper">Basketball</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					
+				</div>
+				
+			</section>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+	
+		
+		
+	</div>
+	
+	
+	
+
+
+
+
+	<!-- Imported styles on this page -->
+	<link rel="stylesheet" href="../../src/assets/js/fullcalendar/fullcalendar.min.css">
+
+	<!-- Imported scripts on this page -->
+	<script src="../../src/assets/js/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../../src/assets/js/jquery-ui/jquery-ui.min.js"></script>
+@@include('../include/foot.html')
+
+

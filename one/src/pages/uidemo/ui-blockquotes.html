@@ -1,0 +1,569 @@
+@@include('../include/head.html')
+@@include('../include/settings-pane.html')
+
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		@@include('../include/sidebar-menu.html')
+		
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Blockquotes</h1>
+					<p class="description">Blockquotes and their variants</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="ui-panels.html">UI Elements</a>
+								</li>
+							<li class="active">
+						
+										<strong>Blockquotes</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<div class="row">
+				
+				<div class="col-md-12">
+			
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">Simple Blockquotes</div>
+							
+							<div class="panel-options">
+								<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+								<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+								<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+								<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+							</div>
+						</div>
+						
+						<div class="panel-body">
+						
+							<div class="row">
+								<div class="col-md-12">
+									
+									<div class="row">
+										<div class="col-sm-6">
+										
+											<h5>Simple Blockquote (Native)</h5>
+											
+											<blockquote>
+												<p>
+													<strong>Blockquote</strong>
+													<br />
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+												</p>
+											</blockquote>
+											
+										</div>
+										
+										<div class="col-sm-6">
+											
+											<h5>Cited</h5>
+											
+											<blockquote>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+												<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+											</blockquote>
+									
+										</div>
+									</div>
+									
+									<br />
+									
+									<h5>Pulled Right</h5>
+									
+									<blockquote class="pull-right">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+										<small>
+											Someone famous in 
+											<cite title="Source Title">Source Title</cite>
+										</small>
+									</blockquote>
+								
+								</div>
+							</div>
+						
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+			
+			<h4>Other Blockquote Types</h4>
+			<br />
+			
+			<div class="row">
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-default">
+						<p>
+							<strong>Blockquote Default</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-info">
+						<p>
+							<strong>Blockquote Info</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-success">
+						<p>
+							<strong>Blockquote Success</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-warning">
+						<p>
+							<strong>Blockquote Warning</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+			</div>
+			
+			
+			<div class="row">	
+				
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-black">
+						<p>
+							<strong>Blockquote Black</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+				<div class="col-sm-6">
+					
+					<blockquote class="blockquote blockquote-purple">
+						<p>
+							<strong>Blockquote Purple</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+				<div class="col-md-12">
+					
+					<blockquote class="blockquote blockquote-red">
+						<p>
+							<strong>Blockquote Red</strong>
+						</p>
+						<p>
+							<small>Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. </small>
+						</p>
+					</blockquote>
+					
+				</div>
+				
+			</div>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+		
+	</div>
+	
+	
+	
+
+
+
+@@include('../include/foot.html')

@@ -1,0 +1,683 @@
+@@include('../include/head.html')
+@@include('../include/settings-pane.html')
+
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		
+		@@include('../include/sidebar-menu.html')
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Loader</h1>
+					<p class="description">Page loading progress bar, simulated by JavaScript functions</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="extra-gallery.html">Extra</a>
+								</li>
+							<li class="active">
+						
+										<strong>Loading Progress</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Example Usage</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					
+					<table class="table">
+						<thead>
+							<tr>
+								<th width="25%">Example, Live Preview</th>
+								<th>Usage Directions</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="javascript:;" onclick="show_loading_bar(100);" class="btn btn-info btn-block">Load to 100%</a>
+								</td>
+								<td>
+									Will show progress bar in the header that will load to 100% and will automatically be hidden.
+									Delay for this animation is 1.3 seconds.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar(100);</pre>
+								</td>
+							</tr>
+							
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="javascript:;" onclick="show_loading_bar(65);" class="btn btn-info btn-block">Load to 65%</a>
+								</td>
+								<td>
+									Will fill the progress bar to 65% and will stop.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar(65);</pre>
+								</td>
+							</tr>
+							
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="javascript:;" onclick="show_loading_bar(20);" class="btn btn-info btn-block">Load to 20%</a>
+								</td>
+								<td>
+									Regression sample, will work if you have already loaded progress to 65% in this case.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar(20);</pre>
+								</td>
+							</tr>
+							
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="#" id="progress-cb-test" class="btn btn-info btn-block">Callback Test (Finish)</a>
+									
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											$("#progress-cb-test").click(function(ev)
+											{
+												ev.preventDefault();
+												
+												show_loading_bar({
+													pct: 78,
+													finish: function(pct)
+													{
+														alert("Progress stopped to: " + pct + '%');
+														hide_loading_bar();
+													}
+												});
+											});
+										});
+									</script>
+								</td>
+								<td>
+									An example how you can trigger specific function after the progress bar reaches the end of given percentage.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar({
+				pct: 78,
+				finish: function(pct)
+				{
+					alert("Progress stopped to: " + pct + '%');
+					hide_loading_bar();
+				}
+			});</pre>
+								</td>
+							</tr>
+							
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="#" id="progress-cb-test-before" class="btn btn-info btn-block">Callback Test (Before)</a>
+									
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											$("#progress-cb-test-before").click(function(ev)
+											{
+												ev.preventDefault();
+												
+												show_loading_bar({
+													pct: 78,
+													delay: 5,
+													before: function(pct)
+													{
+														alert("Progress bar initialized");
+													}
+												});
+											});
+										});
+									</script>
+								</td>
+								<td>
+									An example how you can trigger specific function before the progress bar starts loading. You can also apply both callbacks on finish and before.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar({
+				pct: 78,
+				delay: 5,
+				before: function(pct)
+				{
+					alert("Progress bar initialized");
+				}
+			});</pre>
+								</td>
+								
+							</tr>
+							
+							<tr>
+								<td align="center" class="middle-align">
+									<a href="#" id="progress-advanced" class="btn btn-info btn-block">More Advanced Example</a>
+									
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											$("#progress-advanced").click(function(ev)
+											{
+												ev.preventDefault();
+												
+												show_loading_bar({
+													pct: 78,
+													delay: 1.2,
+													finish: function(pct)
+													{
+														show_loading_bar({
+															pct: 30,
+															delay: 1.7,
+															wait: .5,
+															finish: function()
+															{
+																show_loading_bar({
+																	wait: .5,
+																	pct: 100
+																})
+															}
+														});
+													}
+												});
+											});
+										});
+									</script>
+								</td>
+								<td>
+									Partial loading of the progress bar, this will create several animation instances and can be used in case if you request more than one HTTP request. See the example below.
+									
+									<br />
+									<br />
+									Sample code: <br />
+									<pre>show_loading_bar({
+				pct: 78,
+				delay: 1.2,
+				finish: function(pct)
+				{
+					show_loading_bar({
+						pct: 30,
+						delay: 1.7,
+						wait: .5,
+						finish: function()
+						{
+							show_loading_bar({
+								wait: .5,
+								pct: 100
+							})
+						}
+					});
+				}
+			});</pre>
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">API Functions</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">
+				
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Function Name</th>
+								<th>Description and Usage Details</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+							
+							<tr>
+								<td>
+									<h4>show_loading_bar(options|percentage)</h4>
+								</td>
+								<td class="middle-align">
+									This function will show the progress bar in the upper part of window, and can be called in two ways:
+									
+									<br />
+									<br />
+									1. Percentage - Simply fills the progress bar but do not do any action: <br />
+									
+									<pre>show_loading_bar(100);</pre>
+									
+									<br />
+									<br />
+									2. Options - Its more flexible than the percentage, because here you can adjust delay, wait time, percentage and assign events (before and finish).
+									
+									<br />
+									<br />
+									Example:
+									<br />
+									<pre>show_loading_bar({
+			pct: 100, // number from 0-100,
+			delay: 1.3, // seconds to fully load the percentage (seconds unit)
+			wait: 0, // before starting loading will wait for specified seconds (seconds unit)
+			before: function(pct){ ... }, // Before starting to fill the progress, this function will be called,
+			finish: function(pct){ ... }, // After the progress bar finishes loading the specified percentage,
+			resetOnEnd: true // Will set the percentage to 0 and will be hidden after the progress bar hits 100%
+			});</pre>
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<td>
+									<h4>hide_loading_bar()</h4>
+								</td>
+								<td class="middle-align">
+									Simply hides the progress bar even if it is currently in progress.
+								</td>
+							</tr>
+						
+						</tbody>
+					</table>
+						
+				</div>
+			</div>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+		
+	</div>
+@@include('../include/foot.html')

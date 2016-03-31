@@ -1,0 +1,498 @@
+@@include('../include/head.html')
+@@include('../include/settings-pane.html')
+
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		
+		@@include('../include/sidebar-menu.html')
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Notes</h1>
+					<p class="description">Simple note management plugin</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="extra-gallery.html">Extra</a>
+								</li>
+							<li class="active">
+						
+										<strong>Notes</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<div class="notes-env">
+			
+				<div class="notes-header">
+					<a class="btn btn-secondary btn-icon btn-icon-standalone" id="add-note">
+						<i class="fa-pencil"></i>
+						<span>New Note</span>
+					</a>
+				</div>
+				
+				
+				<div class="notes-list">
+				
+					<ul class="list-of-notes">
+					
+						<!-- predefined notes -->
+						<li class="current"> <!-- class "current" will set as current note on Write Pad -->
+							<a href="#">
+								<strong>This is sample note</strong>
+								<span>How are you buddy?</span>
+							</a>
+							
+							<button class="note-close">&times;</button>
+							
+							<div class="content">This is sample note
+			How are you buddy?</div>
+						</li>
+						
+						<li>
+							<a href="#">
+								<strong>New Note</strong>
+								<span>Remember to take the bus and leave at 04:00 PM</span>
+							</a>
+							
+							<button class="note-close">&times;</button>
+							
+							<div class="content">New Note
+			Remember to take the bus and leave at 04:00 PM
+			
+			Another line of text...</div>
+						</li>
+						
+						<li>
+							<a href="#">
+								<strong>Dream Chasers</strong>
+								<span>Case read they must it of cold that.</span>
+							</a>
+							
+							<button class="note-close">&times;</button>
+							
+							<div class="content">Dream Chasers
+			Case read they must it of cold that. 
+			
+			Speaking trifling an to unpacked moderate debating learning. An particular contrasted he excellence favourable on. Nay preference dispatched difficulty continuing joy one. Songs it be if ought hoped of. Too carriage attended him entrance desirous the saw. Twenty sister hearts garden limits put gay has. We hill lady will both sang room by. Desirous men exercise overcame procured speaking her followed. </div>
+						</li>
+						
+						
+						<li>
+							<a href="#">
+								<strong>Really long text and long title too, it breaks in 2 rows!</strong>
+								<span>But why smiling man her imagine married.</span>
+							</a>
+							
+							<button class="note-close">&times;</button>
+							
+							<div class="content">Really long text and long title too, it breaks in 2 rows!
+			
+			But why smiling man her imagine married. 
+			
+			Chiefly can man her out believe manners cottage colonel unknown. Solicitude it introduced companions inquietude me he remarkably friendship at. My almost or horses period. Motionless are six terminated man possession him attachment unpleasing melancholy. Sir smile arose one share. No abroad in easily relied an whence lovers temper by. Looked wisdom common he an be giving length mr. 
+			
+			Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since. Shortly respect ask cousins brought add tedious nay. Expect relied do we genius is. On as around spirit of hearts genius. Is raptures daughter branched laughter peculiar in settling. 
+			
+			Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance in. Supposing tolerably applauded or of be. Suffering unfeeling so objection agreeable allowance me of. Ask within entire season sex common far who family. As be valley warmth assure on. Park girl they rich hour new well way you. Face ye be me been room we sons fond. 
+			
+			Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons. 
+			
+			Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am. But attention sex questions applauded how happiness. To travelling occasional at oh sympathize prosperous. His merit end means widow songs linen known. Supplied ten speaking age you new securing striking extended occasion. Sang put paid away joy into six her. 
+			
+			Inquietude simplicity terminated she compliment remarkably few her nay. The weeks are ham asked jokes. Neglected perceived shy nay concluded. Not mile draw plan snug next all. Houses latter an valley be indeed wished merely in my. Money doubt oh drawn every or an china. Visited out friends for expense message set eat. 
+			
+			Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford. 
+			
+			Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he. Could death since do we hoped is in. Exquisite no my attention extensive. The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.</div>
+						</li>
+						
+						<!-- this will be automatically hidden when there are notes in the list -->
+						<li class="no-notes">
+							There are no notes yet!
+						</li>
+					</ul>
+					
+					
+					<div class="write-pad">
+						<textarea class="form-control autogrow"></textarea>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+		
+	</div>
+	
+	
+	
+
+	<!-- Imported scripts on this page -->
+	<script src="../../src/assets/js/xenon-notes.js"></script>
+
+@@include('../include/foot.html')

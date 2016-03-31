@@ -1,0 +1,519 @@
+@@include('../include/head.html')
+@@include('../include/settings-pane.html')
+
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		
+		@@include('../include/sidebar-menu.html')
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Scrollable</h1>
+					<p class="description">Add custom scrollbars to panels or dividers</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="extra-gallery.html">Extra</a>
+								</li>
+							<li class="active">
+						
+										<strong>Scrollable</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Simple example inside panel</h3>
+							<div class="panel-options">
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						<div class="panel-body">
+										
+							
+							<div class="scrollable" data-max-height="400">
+								<p>Rural development beneficiaries peaceful global citizens vaccines future Oxfam. Cornerstone development, solutions vaccine citizens of change, health committed donors. Conflict resolution diversification amplify agriculture momentum crisis situation change lives change, disruption disruptor initiative complexity human potential. Convener governance transformative eradicate inspire social change humanitarian. Women and children humanitarian relief public institutions policymakers giving micro-finance, social entrepreneurship many voices detection dialogue achieve lifting people up social good Cesar Chavez. Globalization, civic engagement measures; inclusive capitalism, immunize maximize working alongside catalytic effect end hunger.</p>
+								
+								<p>Sanitation Nelson Mandela Aga Khan tackling, rights-based approach overcome injustice change movements global network clean water support gender. Angelina Jolie, involvement urban; social disrupt; design thinking, strengthen democracy courageous agency. Youth scalable Ford Foundation sharing economy partner time of extraordinary change Global South stakeholders. Opportunity theory of social change hack economic security altruism. Enabler outcomes; readiness freedom; The Elders, think tank innovation safety peace. Reproductive rights engage, Bono frontline rural crisis management promising development asylum. Long-term medical tackle; collaborative growth honor underprivileged.</p>
+								
+								<p>Reduce child mortality; affiliate, fundraising campaign; recognition; capacity building combat malaria inclusive Andrew Carnegie. Save the world political board of directors, empowerment, pursue these aspirations, evolution liberal assistance implementation Bloomberg meaningful pride empower. Visionary care Jane Addams; carbon rights effect accelerate progress. Advancement livelihoods significant foundation, social innovation.</p>
+								
+								<p>Minority volunteer, open source safeguards, celebrate transform new approaches revitalize results. Our ambitions, grantees, Kony 2012 educate donate developing nations harness. Improving quality socio-economic divide crowdsourcing vulnerable population network storytelling, catalyst leverage elevate impact vulnerable citizens. Research sustainable future; inspire breakthroughs donation local solutions, cause; focus on impact poverty, legitimize respect interconnectivity NGO emergent organization. Country invest global health public-private partnerships; foster respond public service resolve integrity. Catalyze our grantees and partners Kickstarter medicine, thinkers who make change happen developing fairness forward-thinking. Honesty mobilize cross-agency coordination Jane Jacobs, collaborative consumption participatory monitoring action.</p>
+								
+								<p>Metrics legal aid Action Against Hunger Arab Spring; planned giving expanding community ownership dignity diversity protect philanthropy. Climate change; activist, prosperity, equality affordable health care change-makers international cross-cultural. Progress, Bill and Melinda Gates Peace Corps community health workers synthesize. Assessment expert, free expression, shifting landscape, social challenges, healthcare social responsibility worldwide fight against malnutrition accessibility Rosa Parks UNICEF. Communities 501(c)(3); fundraise; fighting poverty effectiveness, natural resources employment democracy proper resources, compassion; nonprofit necessities relief countries. Billionaire philanthropy making progress Millennium Development Goals emergency response, gender rights public sector provide progressive indicator prevention. Gender equality voice, incubation nonviolent resistance international development; environmental fight against oppression save lives informal economies democratizing the global financial system transform the world women's rights truth equity.</p>
+								
+								<p>Agenda Gandhi, challenges of our times Medecins du Monde, United Nations, facilitate, efficient, human experience accelerate nutrition positive social change refugee technology resourceful. Microloans enable deep engagement, Rockefeller working families. Connect replicable treatment community approach economic development dedicated UNHCR; solution social analysis free-speech.</p>
+								
+								<p>Economic independence civil society equal opportunity, marginalized communities, contribution, criteria combat poverty aid global leaders process smart cities sustainability. Campaign human rights, collaborative cities, pathway to a better life recognize potential inspiration solve insurmountable challenges. Global, investment plumpy'nut non-partisan, experience in the field; cooperation breakthrough insights, social movement policy dialogue social impact citizenry Martin Luther King Jr. fellows. Lasting change; partnership; carbon emissions reductions; combat HIV/AIDS, advocate innovate generosity small-scale farmers justice life-expectancy activism. Medical supplies institutions local shift; life-saving raise awareness; reduce carbon emissions John Lennon turmoil social worker policy maintain challenges sustainable. Best practices gun control world problem solving, human being education human-centered design benefit meaningful work fluctuation. Socio-economic divide momentum, foster synthesize peace volunteer compassion nonviolent resistance donation economic independence carbon emissions reductions solutions.</p>
+								
+								<p>Sustainable Arab Spring investment efficient informal economies global leaders John Lennon giving cause promising development diversification strengthen democracy. Advocate public service; education cross-agency coordination activist democratizing the global financial system altruism urban. Diversity, engage overcome injustice technology free expression small-scale farmers; recognize potential dedicated evolution rural. Incubation community policy dialogue Aga Khan combat malaria experience in the field environmental Rosa Parks. Humanitarian relief; hack aid, change lives catalytic effect raise awareness initiative. Design thinking Jane Jacobs; public sector save the world outcomes. Effectiveness, reproductive rights human experience; developing nations storytelling implementation human being social good.</p>
+								
+								<p>Rockefeller fight against malnutrition significant honesty minority, respond, development, Andrew Carnegie approach breakthrough insights social worker. World problem solving UNICEF meaningful resourceful, achieve; collaborative United Nations challenges of our times affiliate Nelson Mandela stakeholders our grantees and partners vaccine. Dialogue; empowerment social challenges, legal aid deep engagement improving quality, fellows asylum our ambitions institutions resolve global citizens micro-finance progress. Clean water research, refugee, Jane Addams economic security human-centered design, partnership Medecins du Monde inspire breakthroughs care lasting change community health workers natural resources. Action Against Hunger beneficiaries local solutions Bloomberg disruptor readiness combat HIV/AIDS celebrate.</p>
+								
+								<p>Inclusive donate accelerate progress, empower equity life-saving maintain medical supplies. Working families campaign local, facilitate transform the world gun control. Kickstarter Martin Luther King Jr. vulnerable citizens; gender rights rural development Millennium Development Goals innovate measures meaningful work metrics philanthropy future making progress foundation.</p>
+							</div>
+							
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-sm-5">
+					
+					<h4>Outside the panel</h4>
+					<br />
+					
+					<div class="scrollable" data-max-height="300">			
+						<p>Metrics legal aid Action Against Hunger Arab Spring; planned giving expanding community ownership dignity diversity protect philanthropy. Climate change; activist, prosperity, equality affordable health care change-makers international cross-cultural. </p>
+						<br />
+						
+						<p>Sustainable Arab Spring investment efficient informal economies global leaders John Lennon giving cause promising development diversification strengthen democracy. Advocate public service; education cross-agency coordination activist democratizing the global financial system altruism urban.</p>
+						<br />
+						
+						<p>Inclusive donate accelerate progress, empower equity life-saving maintain medical supplies. Working families campaign local, facilitate transform the world gun control. Kickstarter Martin Luther King Jr. vulnerable citizens; gender rights rural development.</p>
+						<br />
+						
+						<p>Rockefeller fight against malnutrition significant honesty minority, respond, development, Andrew Carnegie approach breakthrough insights social worker. World problem solving UNICEF meaningful resourceful, achieve; collaborative United Nations challenges.</p>
+					</div>
+					
+				</div>
+				<div class="col-sm-7">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Nested Scrollable Containers</h3>
+							<div class="panel-options">
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						<div class="panel-body">
+							
+							<div class="scrollable" data-max-height="300">
+								<p>Inclusive donate accelerate progress, empower equity life-saving maintain medical supplies. Working families campaign local, facilitate transform the world gun control. Kickstarter Martin Luther King Jr. vulnerable citizens; gender rights rural development Millennium Development Goals innovate measures meaningful work metrics philanthropy future making progress foundation.</p>
+								<br />
+								
+								<p>Rockefeller fight against malnutrition significant honesty minority, respond, development, Andrew Carnegie approach breakthrough insights social worker. World problem solving UNICEF meaningful resourceful, achieve; collaborative United Nations challenges of our times affiliate Nelson Mandela stakeholders our grantees and partners vaccine. Dialogue; empowerment social challenges, legal aid deep engagement improving quality, fellows asylum our ambitions institutions resolve global citizens micro-finance progress. Clean water research, refugee, Jane Addams economic security human-centered design, partnership Medecins du Monde inspire breakthroughs care lasting change community health workers natural resources. Action Against Hunger beneficiaries local solutions Bloomberg disruptor readiness combat HIV/AIDS celebrate.</p>
+								<br />
+								
+								<div class="scrollable" data-max-height="150">
+									
+									<div class="bg-info">
+										<p class="text-white">Sanitation Nelson Mandela Aga Khan tackling, rights-based approach overcome injustice change movements global network clean water support gender. Angelina Jolie, involvement urban; social disrupt; design thinking, strengthen democracy courageous agency. Youth scalable Ford Foundation sharing economy partner time of extraordinary change Global South stakeholders. Opportunity theory of social change hack economic security altruism. Enabler outcomes; readiness freedom; The Elders, think tank innovation safety peace. Reproductive rights engage, Bono frontline rural crisis management promising development asylum. Long-term medical tackle; collaborative growth honor underprivileged.</p>
+										
+										<p class="text-white">Reduce child mortality; affiliate, fundraising campaign; recognition; capacity building combat malaria inclusive Andrew Carnegie. Save the world political board of directors, empowerment, pursue these aspirations, evolution liberal assistance implementation Bloomberg meaningful pride empower. Visionary care Jane Addams; carbon rights effect accelerate progress. Advancement livelihoods significant foundation, social innovation.</p>
+										
+										<p class="text-white">Minority volunteer, open source safeguards, celebrate transform new approaches revitalize results. Our ambitions, grantees, Kony 2012 educate donate developing nations harness. Improving quality socio-economic divide crowdsourcing vulnerable population network storytelling, catalyst leverage elevate impact vulnerable citizens. Research sustainable future; inspire breakthroughs donation local solutions, cause; focus on impact poverty, legitimize respect interconnectivity NGO emergent organization. Country invest global health public-private partnerships; foster respond public service resolve integrity. Catalyze our grantees and partners Kickstarter medicine, thinkers who make change happen developing fairness forward-thinking. Honesty mobilize cross-agency coordination Jane Jacobs, collaborative consumption participatory monitoring action.</p>
+										
+										<p class="text-white">Metrics legal aid Action Against Hunger Arab Spring; planned giving expanding community ownership dignity diversity protect philanthropy. Climate change; activist, prosperity, equality affordable health care change-makers international cross-cultural. Progress, Bill and Melinda Gates Peace Corps community health workers synthesize. Assessment expert, free expression, shifting landscape, social challenges, healthcare social responsibility worldwide fight against malnutrition accessibility Rosa Parks UNICEF. Communities 501(c)(3); fundraise; fighting poverty effectiveness, natural resources employment democracy proper resources, compassion; nonprofit necessities relief countries. Billionaire philanthropy making progress Millennium Development Goals emergency response, gender rights public sector provide progressive indicator prevention. Gender equality voice, incubation nonviolent resistance international development; environmental fight against oppression save lives informal economies democratizing the global financial system transform the world women's rights truth equity.</p>
+									</div>
+									
+								</div>
+								
+								<br />
+								
+								<p>Metrics legal aid Action Against Hunger Arab Spring; planned giving expanding community ownership dignity diversity protect philanthropy. Climate change; activist, prosperity, equality affordable health care change-makers international cross-cultural. Progress, Bill and Melinda Gates Peace Corps community health workers synthesize. Assessment expert, free expression, shifting landscape, social challenges, healthcare social responsibility worldwide fight against malnutrition accessibility Rosa Parks UNICEF. Communities 501(c)(3); fundraise; fighting poverty effectiveness, natural resources employment democracy proper resources, compassion; nonprofit necessities relief countries. Billionaire philanthropy making progress Millennium Development Goals emergency response, gender rights public sector provide progressive indicator prevention. Gender equality voice, incubation nonviolent resistance international development; environmental fight against oppression save lives informal economies democratizing the global financial system transform the world women's rights truth equity.</p>
+								<br />
+								
+								<p>Sustainable Arab Spring investment efficient informal economies global leaders John Lennon giving cause promising development diversification strengthen democracy. Advocate public service; education cross-agency coordination activist democratizing the global financial system altruism urban. Diversity, engage overcome injustice technology free expression small-scale farmers; recognize potential dedicated evolution rural. Incubation community policy dialogue Aga Khan combat malaria experience in the field environmental Rosa Parks. Humanitarian relief; hack aid, change lives catalytic effect raise awareness initiative. Design thinking Jane Jacobs; public sector save the world outcomes. Effectiveness, reproductive rights human experience; developing nations storytelling implementation human being social good.</p>
+							</div>
+							
+						</div>
+					</div>
+					
+							
+					
+				</div>
+			</div>
+			
+			<br />
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+		
+		
+	</div>
+	
+@@include('../include/foot.html')
+	
