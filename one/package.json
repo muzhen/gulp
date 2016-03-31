@@ -1,12 +1,10 @@
 {
-  "name": "02-livereload",
+  "name": "01-basic",
   "version": "0.0.0",
   "description": "",
   "author": "Johannes Schickling <schickling.j@gmail.com> (https://github.com/schickling)",
   "devDependencies": {
-    "gulp": "^3.6.2", 
-    "gulp-less": " ",
-    "gulp-uglify": " "
+    "gulp": "^3.6.2",
+    "gulp-file-include": " "
   }
- 
-}  
+}
