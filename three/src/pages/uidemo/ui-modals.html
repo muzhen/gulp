@@ -1,0 +1,727 @@
+@@include('../include/head.html')
+
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		@@include('../include/sidebar-menu.html')
+		
+		
+		<div class="main-content">
+					
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-envelope-o"></i>
+							<span class="badge badge-green">15</span>
+						</a>
+							
+						<ul class="dropdown-menu messages">
+							<li>
+									
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+								
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+									<!-- Repeated -->
+									
+									<li class="active"><!-- "active" class means message is unread -->
+										<a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+											
+											<span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+										</a>
+									</li>
+									
+									<li class="active">
+										<a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything. 
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+											
+											<span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+											
+											<span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="external">
+								<a href="blank-sidebar.html">
+									<span>All Messages</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="dropdown hover-line">
+						<a href="#" data-toggle="dropdown">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-purple">7</span>
+						</a>
+							
+						<ul class="dropdown-menu notifications">
+							<li class="top">
+								<p class="small">
+									<a href="#" class="pull-right">Mark all Read</a>
+									You have <strong>3</strong> new notifications.
+								</p>
+							</li>
+							
+							<li>
+								<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+									<li class="active notification-success">
+										<a href="#">
+											<i class="fa-user"></i>
+											
+											<span class="line">
+												<strong>New user registered</strong>
+											</span>
+											
+											<span class="line small time">
+												30 seconds ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="active notification-secondary">
+										<a href="#">
+											<i class="fa-lock"></i>
+											
+											<span class="line">
+												<strong>Privacy settings have been changed</strong>
+											</span>
+											
+											<span class="line small time">
+												3 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-primary">
+										<a href="#">
+											<i class="fa-thumbs-up"></i>
+											
+											<span class="line">
+												<strong>Someone special liked this</strong>
+											</span>
+											
+											<span class="line small time">
+												2 minutes ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-danger">
+										<a href="#">
+											<i class="fa-calendar"></i>
+											
+											<span class="line">
+												John cancelled the event
+											</span>
+											
+											<span class="line small time">
+												9 hours ago
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-info">
+										<a href="#">
+											<i class="fa-database"></i>
+											
+											<span class="line">
+												The server is status is stable
+											</span>
+											
+											<span class="line small time">
+												yesterday at 10:30am
+											</span>
+										</a>
+									</li>
+									
+									<li class="notification-warning">
+										<a href="#">
+											<i class="fa-envelope-o"></i>
+											
+											<span class="line">
+												New comments waiting approval
+											</span>
+											
+											<span class="line small time">
+												last week
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="external">
+								<a href="#">
+									<span>View all notifications</span>
+									<i class="fa-link-ext"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+						
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+							
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+						
+					</li>
+					
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+						
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</nav>
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">Modals</h1>
+					<p class="description">Modals and their variants of usage</p>
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+						
+										<a href="ui-panels.html">UI Elements</a>
+								</li>
+							<li class="active">
+						
+										<strong>Modals</strong>
+								</li>
+								</ol>
+								
+				</div>
+					
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Modals Examples
+						</div>
+						
+						<table class="table">
+							<thead>
+								<tr>
+									<th width="30%">Modal Type</th>
+									<th>Example</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="middle-align">Basic</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'fade'});" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Custom Width</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-2').modal('show');" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Full Width</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-3').modal('show');" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Confirm to Close</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Long Modal</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-5').modal('show', {backdrop: 'fade'});" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Responsive Modal</td>
+									<td>
+										<a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="middle-align">Ajax Modal</td>
+									<td>
+										<a href="javascript:;" onclick="showAjaxModal();" class="btn btn-primary btn-single btn-sm">Show Me</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<script type="text/javascript">
+			function showAjaxModal()
+			{
+				jQuery('#modal-7').modal('show', {backdrop: 'static'});
+				
+				jQuery.ajax({
+					url: "data/ajax-content.txt",
+					success: function(response)
+					{
+						jQuery('#modal-7 .modal-body').html(response);
+					}
+				});
+			}
+			</script>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>Xenon</strong> 
+						More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+		
+			
+		
+		
+		
+	</div>
+	
+	
+	<!-- Modal 1 (Basic)-->
+	<div class="modal fade" id="modal-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Basic Modal</h4>
+				</div>
+				
+				<div class="modal-body">
+					Hello I am a Modal!
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal 2 (Custom Width)-->
+	<div class="modal fade custom-width" id="modal-2">
+		<div class="modal-dialog" style="width: 60%;">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Custom Width Modal</h4>
+				</div>
+				
+				<div class="modal-body">
+					Any type of width can be applied.
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal 3 (Custom Width)-->
+	<div class="modal fade custom-width" id="modal-3">
+		<div class="modal-dialog" style="width: 96%">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Full width</h4>
+				</div>
+				
+				<div class="modal-body">
+				
+					Its about 100%
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- Modal 4 (Confirm)-->
+	<div class="modal fade" id="modal-4" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<h4 class="modal-title">Confirm Modal</h4>
+				</div>
+				
+				<div class="modal-body">
+				
+					You can close this modal when you click on button only!
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Continue</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Modal 5 (Long Modal)-->
+	<div class="modal fade" id="modal-5">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Long Height Modal</h4>
+				</div>
+				
+				<div class="modal-body">
+				
+					<img src="assets/images/eiffel.jpg" alt="" class="img-responsive" />
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Modal 6 (Long Modal)-->
+	<div class="modal fade" id="modal-6">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Modal Content is Responsive</h4>
+				</div>
+				
+				<div class="modal-body">
+				
+					<div class="row">
+						<div class="col-md-6">
+							
+							<div class="form-group">
+								<label for="field-1" class="control-label">Name</label>
+								
+								<input type="text" class="form-control" id="field-1" placeholder="John">
+							</div>	
+							
+						</div>
+						
+						<div class="col-md-6">
+							
+							<div class="form-group">
+								<label for="field-2" class="control-label">Surname</label>
+								
+								<input type="text" class="form-control" id="field-2" placeholder="Doe">
+							</div>	
+						
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-md-12">
+							
+							<div class="form-group">
+								<label for="field-3" class="control-label">Address</label>
+								
+								<input type="text" class="form-control" id="field-3" placeholder="Address">
+							</div>	
+							
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-md-4">
+							
+							<div class="form-group">
+								<label for="field-4" class="control-label">City</label>
+								
+								<input type="text" class="form-control" id="field-4" placeholder="Boston">
+							</div>	
+							
+						</div>
+						
+						<div class="col-md-4">
+							
+							<div class="form-group">
+								<label for="field-5" class="control-label">Country</label>
+								
+								<input type="text" class="form-control" id="field-5" placeholder="United States">
+							</div>	
+						
+						</div>
+						
+						<div class="col-md-4">
+							
+							<div class="form-group">
+								<label for="field-6" class="control-label">Zip</label>
+								
+								<input type="text" class="form-control" id="field-6" placeholder="123456">
+							</div>	
+						
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-md-12">
+							
+							<div class="form-group no-margin">
+								<label for="field-7" class="control-label">Personal Info</label>
+								
+								<textarea class="form-control autogrow" id="field-7" placeholder="Write something about yourself"></textarea>
+							</div>	
+							
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal 7 (Ajax Modal)-->
+	<div class="modal fade" id="modal-7">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Dynamic Content</h4>
+				</div>
+				
+				<div class="modal-body">
+				
+					Content is loading...
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+@@include('../include/foot.html')
