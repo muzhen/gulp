@@ -1,0 +1,20 @@
+<div class="control-group">
+    <label class="control-label ui-upfile-label ihd_pic_name">活动封面：</label>
+
+    <div class="controls">
+        <div class="ui-upfile">
+            <div class="file-area ihd-file-area <#if !model?? || !model.bannerUrl?? || model.bannerUrl==''>hidden</#if>">
+                <img src="${(model.bannerUrl)!}"/>
+            </div>
+            <input type="hidden" name="activity.bannerUrl" class="bannerUrl ihd-banner-url" value="${(model.bannerUrl)!}"/>
+            <div class="sui-btn btn-primary ui-upfile-btn ihd_file_upload"><span>上传图片</span>
+                <input class="upfile-img myFile" type="file" name="file" id="myFile">
+            </div>
+
+        </div>
+        <div class="sui-msg msg-tips msg-naked">
+			<div class="msg-con">请上传图片规格${(picWidth)!}*${(picHeight)!}的jpg、gif、png图片,文件大小建议100kb以内.</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
