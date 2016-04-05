@@ -1,0 +1,25 @@
+/**
+ *
+ * Apply your goods CSS here
+ *
+*/
+.content {
+	/*margin-left:90px;*/
+}
+.content div.left{ float:left;}
+#yz{ 
+	margin-left:180px;
+	
+	}
+dt.listContent{
+	font-size:16px; 
+}
+.box-left{
+	width:65%; 
+	float:left; 
+	display:inline;
+}
+.box-right{
+	width:35%; 
+	display:inline;
+}

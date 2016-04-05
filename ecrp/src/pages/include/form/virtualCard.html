@@ -1,0 +1,14 @@
+ <div class="control-group">
+    <label class="control-label v-top">选择<#if type??&&type=1>补签卡<#else>虚拟卡</#if>：</label>
+    <div class="controls"> 
+        <select name="virtualCard.virtualCardId" id="virtualCard" data-ihd-type="${type!}" disabled>
+    	</select>
+    	<#if type??&&type=1>
+	   		<a class="sui-btn btn-small btn-success ihd_new_btn_virtualCard" href="/vip/virtualRepairSign" target="_blank">新建补签卡</a>
+	   		<span class="sui-btn btn-small btn-primary ihd_refresh_btn_virtualCard">刷新补签卡</span>
+   		<#else>
+	   		<a class="sui-btn btn-small btn-success ihd_new_btn_virtualCard" href="/vip/virtualEquity" target="_blank">新建虚拟卡</a>
+	   		<span class="sui-btn btn-small btn-primary ihd_refresh_btn_virtualCard">刷新虚拟卡</span>
+   		</#if>
+    </div>
+  </div>

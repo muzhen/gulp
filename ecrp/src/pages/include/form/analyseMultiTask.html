@@ -1,0 +1,68 @@
+<#macro analyseCommon>
+	<script type="text/javascript" src="${ctx}/resources/${feMode}/ihd/app/common/analyseMultiTask.js?v=${feVersion!'0'}"></script>
+</#macro>
+<#macro analyseUserJoin guid>
+<input type="hidden" id="ihd-analyse-userJoin-guid" value="${guid!}"/> 
+<div class="col-md-6">
+	<div class="panel  panel-border">
+		<div class="panel-heading"> 
+			<div class="panel-title" >完成人数</div>
+		</div>
+		<div class="panel-body">
+			<div id="ihd-analyse-userJoin" ></div>
+		</div>
+	</div>
+</div> 
+</#macro> 
+<#macro analyseSource guid>
+<input type="hidden" id="ihd-analyse-source-guid" value="${guid!}"/>  
+<div class="col-md-6">
+	<div class="panel  panel-border">
+		<div class="panel-heading"> 
+			<div class="panel-title">来源分析</div>
+		</div>
+		<div class="panel-body">
+			<div id="ihd-analyse-source" ></div>
+		</div>
+	</div>
+</div>   
+</#macro> 
+<#macro analyseTime guid>
+<input type="hidden" id="ihd-analyse-time-guid" value="${guid!}"/> 
+<div class="col-md-6">
+	<div class="panel  panel-border">
+		<div class="panel-heading"> 
+			<div class="panel-title" >时间段分析</div>
+		</div>
+		<div class="panel-body">
+			<div id="ihd-analyse-time" ></div>
+		</div>
+	</div>
+</div>     
+</#macro> 
+<#macro analyseIntegralMultiTask guid>
+<input type="hidden" id="ihd-analyse-integral-multiTask-guid" value="${guid!}"/> 
+<div class="col-md-6">
+	<div class="panel  panel-border">
+		<div class="panel-heading"> 
+			<div class="panel-title" >积分分析</div>
+		</div>
+		<div class="panel-body">
+			<div id="ihd-analyse-integral-multiTask" ></div>
+		</div>
+	</div>
+</div>         
+</#macro> 
+<#macro analyseACTStep guid>
+<input type="hidden" id="ihd-analyse-ACTStep-guid" value="${guid!}"/>
+<div class="col-md-12">
+	<div class="panel  panel-border">
+		<div class="panel-heading">
+			<div class="panel-title"> 参与人数分析 </div>
+		</div>
+		<div class="panel-body">
+			<div id="ihd-analyse-ACTStep" ></div>
+		</div>
+	</div>
+</div>	
+</#macro> 

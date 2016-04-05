@@ -1,0 +1,143 @@
+@@include('../include/head.html')
+ 
+
+    
+
+<div class="main-content ">
+ 
+
+ 
+ <!-- Main Footer -->
+  @@include('../include/page-title.html')
+ 
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">客户信息</h3>
+      </div>
+      <div class="panel-body">
+          <table id="example"  class="table table-striped table-bordered" cellspacing="0" width="100%">
+              <thead>
+              <tr>
+                  <th style="width:15px"><input type="checkbox" id='checkAll'></th>
+                  <th>ID</th>
+                  <th>昵称</th>
+                  <th>姓名</th>
+                  <th>手机</th>
+                  <th>交易金额（次数）</th>
+                  <th>操作</th>
+              </tr>
+              </thead>
+
+              <tfoot>
+              <tr>
+                  <th></th>
+                  <th>ID</th>
+                  <th>昵称</th>
+                  <th>姓名</th>
+                  <th>手机</th>
+                  <th>交易金额（次数）</th>
+                  <th>操作</th>
+              </tr>
+              </tfoot>
+          </table>  
+      </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(function(){
+        var table = apus.ui.grid('#example',{
+            "url": ctx+"/uidemo/tabledata",
+            "language": {
+                "search": "客户昵称/姓名/手机："
+            },
+            "columns": [
+                {
+                    "data": null,
+                    "orderable":false,
+                    "defaultContent": '',
+                    "render":function(data, type, row) {
+                        return "<input type='checkbox' name='checkList' value=''>";
+                    }
+                },
+                {
+                    "data": "id",
+                    "visible": false
+                },
+                { "data": "customer_name" },
+                { "data": "out_nick" },
+                { "data": "mobile" },
+                {
+                    "orderable": false,
+                    "data": null,
+                    "defaultContent": '',
+                    "render":function(data, type, row) {
+                        return row['trade_times']+'('+row['trade_amount']+')';
+                    }
+                },
+                {
+                    "orderable":      false,
+                    "data":           null,
+                    "defaultContent": '',
+                    "width":'100px',
+                    "render":function(data, type, row) {
+                        return "";
+                    }
+                }
+            ],
+            "order": [[ 1, "desc" ]],
+            initComplete: function () {
+                $("#mytool").append('<a href="javascript:jQuery(\'#modal-1\').modal(\'show\', {backdrop: \'fade\'});" class="btn btn-primary btn-sm" data-toggle="modal">批量修改属性</a>&nbsp');
+            }
+        });
+
+        table.on( 'draw', function () {
+            table.rows().every( function () {
+                var str = '<table class="table responsive subtable" style="margin-bottom:0">'+
+                        '<thead>'+
+                        '<tr>'+
+                        '<th>#</th>'+
+                        '<th>para1</th>'+
+                        '<th>para2</th>'+
+                        '<th>para3</th>'+
+                        '<th>para4</th>'+
+                        '<th>para5</th>'+
+                        '</tr>'+
+                        '</thead>'+
+                        '<tbody>';
+                var data = this.data();
+                $.each(data.subList,function(idx,ele){
+                    str +='<tr>'+
+                            '<td>'+(idx+1)+'</td>'+
+                            '<td>'+ele.para1+'</td>'+
+                            '<td>'+ele.para2+'</td>'+
+                            '<td>'+ele.para3+'</td>'+
+                            '<td>'+ele.para4+'</td>'+
+                            '<td>'+ele.para5+'</td>'+
+                            '<tr>';
+                });
+
+                str +=  '</tbody>'+
+                        '</table>';
+
+                this.child( str ).show();
+                
+            } );
+            $('.subtable').closest('tr').css('background','#F0F0F0');
+ 
+        } );
+
+      
+    });
+</script>
+
+
+
+
+  <!-- Main Footer -->
+  @@include('../include/footer.html')
+
+</div> 
+
+  @@include('../include/foot.html')

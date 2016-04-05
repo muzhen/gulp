@@ -1,0 +1,31 @@
+<div class="control-group">
+    <label class="control-label v-top">选择权益卡：</label>
+    <div class="controls"> 
+        <select  class="ihd_virtualCardId" id="ihd_virtualCardId"  data-init="select2" >
+        	<option value="">请选择相应的权益卡</option>
+        	<#if listVC??>
+			   <#list listVC as vc>
+			      <option value="${(vc.id)!}" >${(vc.title)!}</option>
+			   </#list>
+			   <#else>
+	        </#if>
+		</select>
+		<a class="sui-btn btn-small btn-success"<#if !(model.timeState) ??>href="/vip/virtualEquity" <#else>disabled="disabled"</#if> target="_blank">新建权益卡</a>
+		<span class="sui-btn btn-small btn-primary <#if !(model.timeState) ??>ihd_refreashCardList</#if>"<#if (model.timeState) ??>disabled="disabled"</#if>>刷新权益卡</span>
+    </div>
+  </div>
+
+
+  <div class="date-list" style="display:none">
+      <label class="control-label"></label>
+      <div class="controls">
+          <ul class="sui-tag tag-bordered ihd_equityTab">
+          <#if selectedCardList??>
+	         <#list selectedCardList as sc>
+	           <li class="tag-selected with-x ihd_equityDiv" data-cardId="${(sc.id)!}">${(sc.title)!}<i class="ihd_removeEquity"></i></li>
+	         </#list>
+		  </#if>
+          </ul>
+      </div>
+</div>
+<@card/>

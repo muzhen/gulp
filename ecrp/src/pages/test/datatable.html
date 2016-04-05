@@ -1,0 +1,144 @@
+@@include('../include/head.html',{
+  "title": "datatable" 
+})
+ <div class="main-content" >
+
+  @@include('../include/page-title.html')
+ 
+  <div class="row tabs-vertical-content">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">标签管理</h3>
+            </div>
+            <div class="panel-body">
+                <table id="logisticsTable" class="table table-striped table-bordered" cellspacing="0" width="100%">                    
+                </table>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+     $(function () {
+$('#labelManagement').dataTable( { 
+          url: "/pages/uidemo/postData/tempData.txt",
+            language: {
+              search: "客户昵称："
+            },
+            ordering : false,
+            fixedHeader: true,
+            columns: [
+                      {
+                        "data":null,
+                        "title":'序号',
+                        "width":'50px',
+                          render: function (data) {
+                            var str ='1001';
+                              return str;
+                          }
+                      },
+                  {   
+                      "data": null, 
+                      "title":'标签名称',
+                      "width": '100px', 
+                      "orderable":false,
+                      "defaultContent": '',
+                      "render":function(data, type, row) { 
+                          var str ='质量不错';
+                          return str;
+                      }
+                  },
+  
+                  {   
+                    "data": null, 
+                    "width": '180px', 
+                    "title":'商品关键字',
+                    "orderable": false,
+                    render: function (data) {
+                          var str ='<p  class="goods">韩版，冬季，加绒，中长款，修身，韩版，冬季，加绒，中长款，修身</p>'+
+                          '<div> 韩版，冬季，加绒，中长款，修身，韩版，冬季，加绒，中长款，修身</div>';
+                        return str;
+                        }
+                      
+                  },
+                  {    
+                    "data": null, 
+                    "title":'关键字过滤',
+                    "width": '190px', 
+                    "orderable": false,
+                    render: function (data) {
+                      var str ='<p class="filter">韩版，加绒，中长款，修身</p>'+
+                          '<div> 韩版，冬季，加绒，中长款，修身</div>';
+                        return str;
+                        }
+                      
+                  },
+                  {    
+                    "data": null, 
+                    "title":'排除关键字',
+                    "width": '180px', 
+                    "orderable": false,
+                    render: function (data) {
+                      var str ='<p class="ruleOut">韩版，冬季，加绒，中长款，修身，韩版，冬季，加绒，中长款，修身</p>'+
+                          '<div> 韩版，冬季，加绒，中长款，修身，韩版，冬季，加绒，中长款，修身</div>';
+                        return str;
+                        }
+                      
+                  },
+                   
+                  {
+                      "orderable": false,
+                      "data": null, 
+                      "title": "操作", "width": '83px', 
+                      "render": function (data, type, rdata) {
+                         var str = '<div class="btn-group">' +
+                           '<a  type="button" class="btn btn-info modify">修改</a>' +
+                           '<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">' +
+                           '<span class="caret"></span>' +
+                           '</button>' +
+                           '<ul class="dropdown-menu" role="menu">' + 
+                           '<li>' +
+                           '<a class="delete">删除</a>' +
+                           '</li>' + 
+                           '</ul>' +
+                           '</div>';
+    
+                           return str;
+  
+                      }
+            }
+  
+  
+  
+              ],
+              "dom": "<'row'<'.mytool col-xs-6'><'col-xs-6'>r>" +
+              "t" +
+              "<'row'<'col-xs-5 margin-top-5 nowrap'l i><'col-xs-7'p>>",
+              order: [[1, "desc"]],
+              initComplete: function () {
+  
+                  var str = '<a class="btn btn-success addBtnFu"><i class="fa-plus-square"></i><span>&nbsp;新增标签</span></a>';
+                  $(".mytool").append(str);
+                   
+                  return str;
+  
+              }
+              
+          });
+  
+      });
+    
+ 
+  </script>
+
+    <!-- Main Footer -->
+  @@include('../include/footer.html')
+
+</div>  
+
+
+
+  @@include('../include/foot.html')
