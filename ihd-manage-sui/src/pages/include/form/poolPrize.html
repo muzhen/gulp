@@ -1,0 +1,11 @@
+<div class=" ">
+    <label class="control-label">奖池选择：</label>
+    <div class="controls">
+        <select id="poolPrize" name="activity.lotteryCode" disabled>
+        </select>
+        <a class="sui-btn btn-small btn-success ihd_new_btn_poolPrize" href="http://mouton.admin.tmall.com/" target="_blank">新建奖池</a>
+        <span class="sui-btn btn-small btn-primary ihd_refresh_btn_poolPrize">刷新奖池</span>
+    </div>
+</div>
+<input type="hidden" value="${(model.lotteryCode)!}" id="pool_prize_id">
+<@poolPrize/>
