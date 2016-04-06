@@ -23,10 +23,21 @@ gulp.task('fileinclude', function() {
 //监听到所有与src/assets/less/*.less(less文件夹下的文件)相匹配的文件的变化。
 //一旦监测到变化，就会生成css并保存，然后重新加载网页
 gulp.task('less', function() {
-   gulp.src('src/assets/less/*.less')
-      .pipe(watch("src/assets/less/*.less"))
+   gulp.src('src/assets/less/**/*.less')
+      .pipe(watch("src/assets/less/**/*.less"))
       .pipe(less())
       .pipe(autoprefix('last 2 version', 'ie 8', 'ie 9'))
+      .pipe(gulp.dest('dist/assets/css/less/'))
+      .pipe(livereload());
+});
+
+//css
+gulp.task('css', function() {
+   gulp.src('src/assets/css/**/*.css')
+      //.pipe(watch("src/assets/css/*.css"))
+      //.pipe(less())
+      .pipe(autoprefix('last 2 version', 'ie 8', 'ie 9'))
+      .pipe(concat('main.min.css'))
       .pipe(gulp.dest('dist/assets/css/'))
       .pipe(livereload());
 });
@@ -37,7 +48,7 @@ gulp.task('js', function () {
       .pipe(jshint())//校验语法
       .pipe(jshint.reporter('default'))
       .pipe(uglify())//压缩js
-      .pipe(concat('mz.min.js'))//合并成一份
+      .pipe(concat('main.min.js'))//合并成一份
       .pipe(gulp.dest('dist/assets/js/'));//生成目录
 });
 
@@ -46,7 +57,8 @@ gulp.task('js', function () {
 gulp.task('watch', function() {
     gulp.watch('src/pages/test/*.html', ['fileinclude']);
     gulp.watch('src/assets/less/*.less', ['less']);
+    gulp.watch('src/assets/css/**/*.css', ['css']);
     gulp.watch('src/assets/js/*/*.js', ['js']);
 })
 
-gulp.task('default', ['fileinclude','less','js', 'watch']);
+gulp.task('default', ['fileinclude','less','css','js', 'watch']);
