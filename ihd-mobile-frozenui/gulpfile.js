@@ -11,12 +11,12 @@ var gulp = require('gulp'),
 
 //合并文件
 gulp.task('fileinclude', function() {
-  gulp.src(['src/pages/test/*.html'])
+  gulp.src(['src/pages/**/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('dist/pages/test/'));
+    .pipe(gulp.dest('dist/pages/'));
 });
 
 //监听到所有与src/assets/less/*/*.less( less文件夹下的文件夹的文件)相匹配的文件的变化。
