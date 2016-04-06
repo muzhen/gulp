@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>头像</title> 
+  <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui.min.css" rel="stylesheet">
+  <link href="../../src/assets/css/base.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="https://g.alicdn.com/sj/qnui/1.4.3/css/sui-themes-pink.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/sj/qnui/1.5.1/css/sui-append.min.css">
+    <link rel="stylesheet" type="text/css" href="https://g.alicdn.com/sj/qnui/1.4.3/css/sui-themes-pink-append.min.css">
+
+    <link rel="stylesheet" type="text/css" href=" ../../assets/css/ihd.css">
+    <script type="text/javascript" src="https://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<section id="avatar">
+    <div class="demo-item">
+        <p class="demo-desc">头像</p>
+        <div class="demo-block">
+            <ul class="ui-list ui-list-pure ui-border-tb">
+                <li class="ui-border-t">
+                    <h4>100*100头像</h4>
+                    <div class="ui-avatar">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <h4>80*80头像</h4>
+                    <div class="ui-avatar-s">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <h4>140*140头像</h4>
+                    <div class="ui-avatar-lg">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span>
+                    </div>
+                    
+                </li>
+                <li class="ui-border-t">
+                    <h4>资料场景</h4>
+                    <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                </li>
+                <li class="ui-border-t">
+                    <h4>平铺头像</h4>
+                    <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                    <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                    <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                    <span class="ui-avatar-tiled"><span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+ 
+<script>
+    $('.ui-list li,.ui-tiled li').click(function(){
+        if($(this).data('href')){
+            location.href= $(this).data('href');
+        }
+    });
+    $('.ui-header .ui-btn').click(function(){
+        location.href= 'index.html';
+    });
+</script>
+ 
