@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>form</title> 
+  <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui.min.css" rel="stylesheet">
+  <link href="../../src/assets/css/base.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="https://g.alicdn.com/sj/qnui/1.4.3/css/sui-themes-pink.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/sj/qnui/1.5.1/css/sui-append.min.css">
+    <link rel="stylesheet" type="text/css" href="https://g.alicdn.com/sj/qnui/1.4.3/css/sui-themes-pink-append.min.css">
+
+    <link rel="stylesheet" type="text/css" href=" ../../assets/css/ihd.css">
+    <script type="text/javascript" src="https://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+     <form class="sui-form " >
+     
+        <div class="control-group">
+            <label class="control-label v-top">商家LOGO展示：</label>
+            <div class="controls">
+                <div class="input-control">
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" name="logoShow" value="0" checked="checked" data-ihd-bind="logoShow"/>        
+                        <span>显示</span>
+                    </label>
+                    <label data-toggle="radio" class="radio-pretty inline">
+                        <input type="radio" name="logoShow" value="1" data-ihd-bind="logoShow"/>        
+                        <span>不显示</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div data-ihd-bind="logoShowBox">
+ 
+            <div> 1</div>
+            <div class="hidden"> 2</div>
+
+        </div>
+    
+
+    </form>
+<script>
+    $(function () {
+    
+  // 淘宝官方宝箱》》LOGO显示
+  var tabBtn_logoShow = $('[data-ihd-bind="logoShow"]'), tabBox_logoShow = $('[data-ihd-bind="logoShowBox"]>div');
+  tabBtn_logoShow.change(function () {
+      var $el = $(this);
+      tabBox_logoShow.eq($el.val()).removeClass("hidden").siblings().addClass("hidden");
+  });
+   
+  // 爱互动》》是否发放红包
+  var tabBtn_giveOut = $('[data-ihd-bind="giveOut"]'), tabBox_giveOut = $('[data-ihd-bind="giveOutBox"]>div');
+  tabBtn_giveOut.change(function () {
+      var $el = $(this);
+      tabBox_giveOut.eq($el.val()).removeClass("hidden").siblings().addClass("hidden");
+  });
+  
+    
+});
+</script>
+
+
+</body>
+</html>

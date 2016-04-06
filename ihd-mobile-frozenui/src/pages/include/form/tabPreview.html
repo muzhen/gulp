@@ -1,0 +1,135 @@
+<link rel="stylesheet" type="text/css" href="${ctx}/resources/${feMode}/ihd/tools/weitaoPush/weitao.css?v=${feVersion!'0'}">
+<ul class="sui-nav nav-tabs">
+    <li class="active <#if type?? && !type?contains('1')>fn-hide</#if>">
+        <a href="#mobiles" data-toggle="tab">
+            <span class="visible-xs"><i class="fa-envelope-o"></i></span>
+            <span class="hidden-xs">爱互动无线端</span>
+        </a>
+    </li>   
+    <li class="<#if type?? && !type?contains('2')>                
+                	fn-hide                 
+              <#else>
+                <#if !type?contains('1')>
+                	active               
+                </#if>
+              </#if>">
+        <a href="#pcs" data-toggle="tab">
+            <span class="visible-xs"><i class="fa-cog"></i></span>
+            <span class="hidden-xs">爱互动PC端</span>
+        </a>
+    </li>
+    <li id="ihd_weitao_crms" <#if type?? && !type?contains('3')>class="fn-hide"</#if>>
+        <a href="#crms" data-toggle="tab">
+            <span class="visible-xs"><i class="fa-cog"></i></span>
+            <span class="hidden-xs">客道CRM</span>
+        </a>
+    </li>
+    <li <#if type?? && !type?contains('4')>class="fn-hide"</#if>>
+        <a href="#weitaos" data-toggle="tab">
+            <span class="visible-xs"><i class="fa-home"></i></span>
+            <span class="hidden-xs">微淘</span>
+        </a>
+    </li>
+    <li <#if type?? && !type?contains('6')>class="fn-hide"</#if>>
+        <a href="#taobaoCodes" data-toggle="tab">
+            <span class="visible-xs"><i class="fa-user"></i></span>
+            <span class="hidden-xs">微信朋友圈</span>
+        </a>
+    </li>
+</ul>
+
+<div class="tab-content">
+
+	<div class="tab-pane active <#if type?? && !type?contains('1')>fn-hide</#if>"  id="mobiles">
+	     <!--  签到 -->
+	     <#if isSign?? && isSign=='1'>
+	     	<p>无线端：签到二维码地址</p>
+	     <#else>
+	     	<p>无线端：将链接地址装修在手机店铺任何位置可引导买家直接点击打开</p>
+	     </#if>
+	     
+	     <#if activity??>
+	     <p>${(mobileUrl)!''}</p>
+	        <div style="margin:0px auto;text-align:center;">	        
+	        <#if qrcodeUrl??>	         	
+	        	<p><img src="${(qrcodeUrl)!''}"></p>
+	        <#else>
+	            <div class="qr"></div>
+	        </#if>	
+	        </div>       
+	     <#else>
+	        <p>获取失败</p>
+	     </#if>         
+    </div>
+    
+    <div class="tab-pane <#if type?? && !type?contains('2')>
+                     fn-hide
+				 <#else>
+				    <#if !type?contains('1')>				    	
+	                   active
+	                </#if>
+   				 </#if>" id="pcs">    
+        <p>PC端：此链接可自定义装修到店铺，也可以预览或直接定位到此任务</p>
+        <#if activity??>
+        	<p>${(activity.pcUrl)!''}</p>
+        <#else>
+	        <p>获取失败</p>
+	    </#if> 
+    </div>
+    
+     <div class="tab-pane <#if type?? && !type?contains('3')>fn-hide</#if>" id="crms">
+     	<p>营销短链：该链接可插入营销短信中，点击链接直达指定活动</p>
+        <p class="crmUrl_img">${(crmUrl)!''}</p>
+     </div>
+    
+    <div class="tab-pane <#if type?? && !type?contains('4')>fn-hide</#if>" id="weitaos">
+        <form class="sui-form form-horizontal" id="ihd_weitao_form">
+            <input type="hidden" name="activityId" value="${(activity.id)!''}">
+            <input type="hidden" name="bannerUrl"/>
+            <div class="control-group">
+                <label  class="control-label">活动标题：</label>
+                <div class="controls"> <input type="text" name="wtTitle" value="${(activity.title)!''}" data-rule-required="true" data-rule-maxlength="10"> </div>
+            </div>
+             <div class="control-group">
+                <label  class="control-label">活动时间：</label>
+                <div class="controls"> <input class="Wdate" type="text" onclick="WdatePicker()" disabled="" value="${(activity.startTime)!''}">
+                    <label>&nbsp;~&nbsp;</label>
+                    <input class="Wdate" type="text" onclick="WdatePicker()" disabled=""  value="${(activity.endTime)!''}"> </div>
+             </div>
+             <div class="control-group">
+                <label  class="control-label v-top ui-upfile-label">上传banner：</label>   
+                <div class="controls">            
+	                <div class="file-area hidden">
+							<img src="#" style="width:180px;height:60px"/>
+					</div>
+	                 <div class="sui-btn btn-primary ui-upfile-btn ihd_file_upload">上传图片
+		                <input class="upfile-img myFile" type="file" name="file" id="myFile">
+		            </div>
+		        </div>     
+	         </div>          
+             <div class="sui-msg msg-tips msg-naked">
+                <div class="msg-con">上传图片尺寸必须等于630px*210px的jpg、gif、png图片，文件建议小于100kb</div>
+                <i class="msg-icon"></i>
+            </div>
+            
+            <div class="control-group">
+			    <label class="control-label"></label>
+			    <div class="controls">
+			       <span class="sui-btn btn-primary ihd_weitao_btn">推送</span> 			       
+				</div>
+		  	</div>
+         </form>
+    </div>
+    
+    <div class="tab-pane <#if type?? && !type?contains('6')>fn-hide</#if>" id="taobaoCodes">
+ 		<p>用手淘扫码打开活动分享界面生成淘口令进行分享</p> 
+	    <p style="text-align: center;"><img src="${(taobaoCode)!''}"/></p>
+    </div>
+  
+</div>
+<input type="hidden" name="crmUrl" value="${(crmUrl)!''}">
+<input type="hidden" name="isSign" value="${(isSign)!''}">
+<input type="hidden" name="guid" value="${(activity.guid)!''}">
+<input type="hidden" name="mobileUrl" value="${(mobileUrl)!''}">
+
+<script type="text/javascript" src="${ctx}/resources/${feMode}/ihd/tools/weitaoPush/index.js?v=${feVersion!'0'}"></script>

@@ -1,0 +1,40 @@
+    <div class="control-group">
+      <label class="control-label v-top">红包名称：</label>
+      <div class="controls">
+        <select  data-init="select2" class="ihd_red_select" <#if (model.id)??>disabled="disabled"</#if>>
+
+        </select>
+        <!-- 
+        <a href="http://ecrm.taobao.com/benefit/create_benefit_template.htm?spm=a1z5o.7717586.1998542872.2.seaU9j" target="_blank">创建红包</a>
+        <a href="#" class="ihd_refresh_red">刷新红包</a>
+         -->
+        <a class="sui-btn btn-small btn-success" href="http://ecrm.taobao.com/benefit/create_benefit_template.htm?spm=a1z5o.7717586.1998542872.2.seaU9j" target="_blank">新建红包</a>
+        <span class="sui-btn btn-small btn-primary ihd_refresh_red" id="redWrapErr">刷新红包</span>
+        <span></span>
+
+        <div class="redEnvelopet">
+          <div class="shopECoupon-info">
+            <div>
+              <span>￥</span><span class="ihd_red_denomination">${(red.denomination)!'0.00'}</span>
+            </div>
+            <p>现金红包</p>
+            <p>数量：<span  class="ihd_red_validTotalNum">${(red.validTotalNum)!'0'}</span>张</p>
+            <p><span  class="ihd_red_startTime">${(red.startTime?string("yyyy-MM-dd"))!}</span>&nbsp;至&nbsp;<span  class="ihd_red_endTime">${(red.endTime?string("yyyy-MM-dd"))!}</span></p>
+          </div> 
+          <div class="sui-msg  msg-tips  msg-naked help-block">
+            <div class="msg-con">建议去创建一个专属这个活动的一个非天猫红包，不要将这个红包与多个活动绑定及关联</div> <i class="msg-icon"></i>
+          </div> 
+        </div>  
+      </div>
+    </div>
+    
+    <input type="hidden" name="redConfig.title" value="${(red.title)!}"/>
+	<input type="hidden" name="redConfig.validTotalNum" value="${(red.validTotalNum)!}"/>
+	<input type="hidden" name="redConfig.benefitId" value="${(red.benefitId)!}"/>
+	<input type="hidden" name="redConfig.denomination" value="${(red.denomination)!}" />
+	<input type="hidden" name="redConfig.startTime" value="${(red.startTime)!}"/>
+	<input type="hidden" name="redConfig.endTime" value="${(red.endTime)!}" />
+	<input type="hidden" name="redConfig.status" value="${(red.status)!}"/>							
+	<input type="hidden" name="redConfig.id" value="${(red.id)!}"/>
+	<input type="hidden" name="oldBenefitId" value="${(red.benefitId)!}"/>
+<@redwrap/>
