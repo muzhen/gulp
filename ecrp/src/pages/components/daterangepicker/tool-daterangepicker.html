@@ -1,0 +1,26 @@
+@@include('../../include/head.html',{
+  "title": "双日历" 
+})
+
+    <!-- 这个页面的插件 -->
+	<link href="../../../assets/lib/daterangepicker/daterangepicker.css" rel="stylesheet"> 
+	<script src="../../../assets/lib/daterangepicker/apus.ui.daterangepicker.js"></script>
+	<script src="../../../assets/lib/modal/daterangepicker.js"></script>
+
+
+	<div class="page-container">
+			
+		
+		<div class="control-group">
+		    <label   class="control-label v-top" ><b class="sui-text-danger">*</b>优惠券有效期：</label>
+		    <div class="controls">
+		        <input type="text" class="input-medium input-date input-date-daterangepicker" data-init="daterangepicker" data-timetype="new" data-start="${(model.startTime)!}" data-end="${(model.endTime)!}"/>
+		        <input type="hidden" name="activity.startTime" value="${(model.startTime)!}" data-daterangepicker="startTime"/>
+		        <input type="hidden" name="activity.endTime" value="${(model.endTime)!}" data-daterangepicker="endTime"/>
+
+		    </div>
+		</div> 
+		
+	</div>
+  @@include('../../include/foot.html')
+ 

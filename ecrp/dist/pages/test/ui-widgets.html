@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>例子</title> 
+    <link rel="stylesheet" href="../../assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-core.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-forms.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-components.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+
+    
+   <link  href="../../../assets/css/main.min.css" rel="stylesheet"> 
+
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script src="../../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../../assets/js/jquery.form.js"></script>
+    <script src="../../assets/js/stickUp.js"></script>
+
+
+
+ <!-- 插件用到的定义 -->
+    <script src="../../../assets/lib/base/apus.js"></script>
+    <script src="../../../assets/lib/base/apus.utils.js"></script>
+    <script src="../../../assets/lib/base/moment.js"></script>
+
+</head>
+<body>
+<div class="page-container">
+
+
+
+
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		
+	<form class="sui-form form-horizontal sign-form validate" id="form">
+        <div class="control-group">
+    <label class="control-label v-top"><b class="sui-text-danger">*</b>活动名称：</label>
+
+    <div class="controls">
+        <input type="text" class="input-xxlarge" name="activity.title" value="123"  />
+        <div class="sui-msg msg-tips msg-naked">
+            <div class="msg-con">为了避免活动名称重复，请每次提交保存使用新的活动名称，字数限于${titleLimit!25}字内</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label v-top"><b class="sui-text-danger">*</b>活动时间：</label>
+
+    <div class="controls">
+    	
+    	 <input type="text" class="input-medium input-date "    >
+		 
+		<input type="hidden" name="activity.endTime" value="1235"  />
+        <div class="sui-msg msg-tips msg-naked">
+           asf
+        </div>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label v-top">参与方式：</label>
+
+    <div class="controls">
+        <label data-toggle="radio" class="radio-pretty inline  ">
+            <input type="radio" name="activity.type" value="0" <span>等级</span>
+        </label>
+        <label data-toggle="radio" class="radio-pretty inline  ">
+            <input type="radio" name="activity.type" value="1"  /><span>人群</span>
+        </label>
+
+        <div class="sui-msg  msg-tips  msg-naked">
+            <div class="msg-con">指定等级与指定昵称只能选择一种方式</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
+<div data-ihd-bind="participationBox" class="control-group">
+    <div class="hidden" >
+        <label class="control-label"><b class="sui-text-danger">*</b>参与等级：</label>
+
+        <div class="controls">
+            <label class="checkbox-pretty inline ">
+                <input type="checkbox" name="grade" value="-1"/><span>新客户</span>
+            </label>
+            <label class="checkbox-pretty inline">
+                <input type="checkbox" name="grade" value="0" /><span>店铺客户</span>
+            </label>
+            <label class="checkbox-pretty inline  ">
+                <input type="checkbox" name="grade"   > value="1"/><span>普通会员</span>
+            </label>
+            <label class="checkbox-pretty inline  ">
+                <input type="checkbox" name="grade"     value="2"/><span>高级会员</span>
+            </label>
+            <label class="checkbox-pretty inline  ">
+                <input type="checkbox" name="grade"  value="3"/><span>VIP会员</span>
+            </label>
+            <label class="checkbox-pretty inline ">
+                <input type="checkbox" name="grade"  value="4"/><span>至尊VIP</span>
+            </label>
+
+        </div>
+    </div>
+    <div  >
+        <label class="control-label v-top"><b class="sui-text-danger">*</b>参与人群：</label>
+        <div class="controls">
+            <textarea class="input-xxlarge" rows="8"  >123</textarea>
+            <div class="sui-msg  msg-tips  msg-naked help-block">
+                <div class="msg-con">请输入这个指定的人群的旺旺帐号，多个客户时请使用,分隔。此功能建议只针很个性或很隐性的使用此功能，除此之外不建议使用此功能来指定人群.</div>
+                <i class="msg-icon"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+ 
+	<div class="control-group">
+ 
+        <label class="control-label"><b class="sui-text-danger">*</b>展现渠道：</label>
+    	 
+    	 <div class="controls">
+            <label class="checkbox-pretty inline  ">
+                <input type="checkbox" name="channel" value="1"/><span>爱互动无线端</span>
+            </label>
+        </div>
+    	 
+    	 <div class="controls">
+            <label class="checkbox-pretty inline  ">
+                <input type="checkbox" name="channel"   value="0"/><span>爱互动PC端</span>
+            </label>
+        </div> 
+
+        <div class="controls">
+            <label class="checkbox-pretty inline ">
+                <input type="checkbox" name="channel"   value="0"/><span>爱互动PC端</span>
+            </label>
+            <label class="checkbox-pretty inline ">
+                <input type="checkbox" name="channel"  value="1"/><span>爱互动无线端</span>
+            </label>
+        </div> 
+    </div>
+
+
+<div class="control-group">
+    <label class="control-label v-top"><b class="sui-text-danger">*</b>活动说明：</label>
+
+    <div class="controls">
+        <textarea class="input-xxlarge" rows="8"  name="activity.remark"  >12456</textarea> 
+        <div class="sui-msg  msg-tips  msg-naked help-block">
+            <div class="msg-con">活动说明会展示给参与活动的客户,请认真填写,字数限于500字以内.</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
+ 
+        <div class="control-group">
+    <label class="control-label v-top">积分设置：</label>
+
+    <div class="controls">
+        <div class="control-group">
+            <div class="ihd-control-group">
+                <label>店铺新客：</label>
+                <input type="text" class="input-small" />
+                <label>分</label>
+            </div>
+            <div class="ihd-control-group">
+                <label>店铺客户：</label>
+                <input type="text" class="input-small"  disabled/>
+                <label>分</label>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="ihd-control-group">
+                <label>普通会员：</label>
+                <input type="text" class="input-small" />
+                <label>分</label>
+            </div>
+            <div class="ihd-control-group">
+                <label>高级会员：</label>
+                <input type="text" class="input-small"/>
+                <label>分</label>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="ihd-control-group">
+                <label><span>VIP</span>会员：</label>
+                <input type="text" class="input-small">
+                <label>分</label>
+            </div>
+
+            <div class="ihd-control-group">
+                <label>至尊<span>VIP</span>：</label>
+                <input type="text" class="input-small" />
+                <label>分</label>
+            </div>
+        </div>
+        <div class="sui-msg  msg-tips  msg-naked help-block">
+            <div class="msg-con">该积分与天猫,淘宝积分无关.</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
+        <div class="control-group">
+            <label class="control-label v-top"></label>
+
+            <div class="controls">
+                <div class="control-dashed-border">
+                    <div class="control-group">
+                        <div class="input-control">
+                            <label><b class="sui-text-danger">*</b>连续签到每天增加：</label>
+                            <input type="text" class="input-small" name="s5" data-rule-required="true">
+                            <label>分，</label>
+                        </div>
+                        <div class="input-control">
+                            <label>连续增加</label>
+                            <input type="text" class="input-small" name="s6" data-rule-required="true"/>
+                            <label>天不再增加<span class="sui-text-warning">&nbsp;0表示不限制天数</span></label>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label "> </label>
+
+                        <div class="controls">
+                            <label class="checkbox-pretty inline">
+                                <input type="checkbox"/><span>指定时间段签到积分附加奖励 (最多支持５个时间段)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label "> </label>
+
+                        <div class="controls">
+                            <span><input class="Wdate inputdate ihd_single_time  ihd_awardtime_startTime" type="text" name=" " value="17:00:00" onclick="WdatePicker({skin:'whyGreen',dateFmt: 'HH:00:00'});" data-rule-required="true"/></span>
+                            <label>~</label>
+                            <span><input class="Wdate inputdate ihd_single_time  ihd_awardtime_startTime" type="text" name=" " value="17:00:00" onclick="WdatePicker({skin:'whyGreen',dateFmt: 'HH:00:00'});" data-rule-required="true"/></span>
+                            <label>签到，额外多送</label>
+                            <input class="input-small" type="text" name="tz1" data-rule-required="true"/>
+                            <label>分</label>
+                        </div>
+                        <i class="sui-icon icon-tb-roundclose"></i>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label "> </label>
+
+                        <div class="controls">
+                            <span><input class="Wdate inputdate ihd_single_time  ihd_awardtime_startTime" type="text" name=" " value="17:00:00" onclick="WdatePicker({skin:'whyGreen',dateFmt: 'HH:00:00'});" data-rule-required="true"/></span>
+
+                            <label>~</label>
+                            <span><input class="Wdate inputdate ihd_single_time  ihd_awardtime_startTime" type="text" name=" " value="17:00:00" onclick="WdatePicker({skin:'whyGreen',dateFmt: 'HH:00:00'});" data-rule-required="true"/></span>
+
+                            <label>签到，额外多送</label>
+                            <input class="input-small" type="text" name="tz2" data-rule-required="true">
+                            <label>分</label>
+                        </div>
+                        <i class="sui-icon icon-tb-roundclose"></i>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label "> </label>
+
+                        <div class="controls">
+                            <a href="javascript:void(0);" class="sui-btn btn-small btn-success ">添加</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"> </label>
+
+            <div class="controls">
+
+                <div class="control-group">
+                    <div class="input-control">
+                        <label class="checkbox-pretty inline ">
+                            <input type="checkbox" name="q1"/>
+                            <span></span>
+                        </label>
+                        <b>签到后奖励抽奖</b>
+                        <span class="sui-text-warning">&nbsp;您可以把官方的奖池绑定到活动上，绑定后不可变更，请谨慎操作！</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="control-group">
+                            <label class="control-label">连续签到：</label>
+
+                            <div class="controls">
+                                <input class="input-small" type="text" name="qd" data-rule-required="true"/>
+                                <span class="sui-text-">次，赠送一次抽奖机会</span>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <label class="control-label">奖池选择：</label>
+
+                            <div class="controls">
+                                <select data-init="selectBoxIt">
+                                    <option value="0" selected="">自定义</option>
+                                    <option value="1">每月指定日</option>
+                                    <option value="2">指定周期</option>
+                                </select>
+                                <span class="sui-btn btn-small btn-success">新建奖池</span>
+                                <span class="sui-btn btn-small btn-warning">刷新奖池</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"></label>
+
+            <div class="controls">
+                <span class="sui-btn btn-primary saveBtn">保存</span>
+                <a class="sui-btn" href="">返回</a>
+            </div>
+        </div>
+
+        <div class="blank_space_20"></div>
+
+    </form>
+
+		
+		
+	</div>
+
+
+
+</div>
+
+<link rel="stylesheet" href="../../assets/js/datatables/dataTables.bootstrap.css">
+<link rel="stylesheet" href="../../assets/js/multiselect/css/multi-select.css">
+
+<!-- Bottom Scripts -->
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/TweenMax.min.js"></script>
+<script src="../../assets/js/resizeable.js"></script>
+<script src="../../assets/js/joinable.js"></script>
+<script src="../../assets/js/xenon-api.js"></script>
+<script src="../../assets/js/xenon-toggles.js"></script>
+<!-- <script src="../../assets/js/datepicker/bootstrap-datepicker.js"></script> -->
+<script src="../../assets/js/multiselect/js/jquery.multi-select.js"></script>
+
+<script src="../../assets/js/jquery-validate/jquery.validate.js"></script>
+<script src="../../assets/js/jquery-validate/localization/messages_zh.min.js"></script>
+<script src="../../assets/js/jquery-validate/jquery.metadata.js" type="text/javascript"></script>
+
+<!-- Imported scripts on this page -->
+<script src="../../assets/js/xenon-widgets.js"></script>
+<script src="../../assets/js/devexpress-web-14.1/js/globalize.min.js"></script>
+<script src="../../assets/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
+<script src="../../assets/js/toastr/toastr.min.js"></script>
+
+<script src="../../assets/js/My97DatePicker/WdatePicker.js"></script>
+
+<script src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+
+<script src="../../assets/js/datatables/js/jquery.dataTables-1.10.6.js"></script>
+<script src="../../assets/js/datatables/dataTables.bootstrap.js"></script>
+<script src="../../assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+<script src="../../assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../assets/js/datatables/FixedHeader/css/dataTables.fixedHeader.css">
+<script src="../../assets/js/datatables/FixedHeader/js/dataTables.fixedHeader.min.js"></script>
+<script src="../../assets/js/bootbox.js"></script>
+
+<!-- JavaScripts initializations and stuff -->
+<script src="../../assets/js/xenon-custom.js"></script>
+
+<script src="/resource/ui/apus/grid.js"></script>
+<script src="/resource/ui/apus/modal.js"></script>
+<script src="/resource/ui/apus/toast.js"></script>
+<script src="/resource/ui/apus/common.js"></script>
+<script src="/resource/ui/apus/element.js"></script>
+
+</body>
+</html>
+
