@@ -1,0 +1,54 @@
+<!-- goodsCountlb为限制数量，默认20个 -->
+<div class="control-group">
+     <#if (activityChoose)?? && (activityChoose)?string == '40'>
+       <label class="control-label ui-upfile-label ihd_goods_text">展示商品：</label>
+     <#else>
+       <label class="control-label ui-upfile-label ihd_goods_text">选择商品：</label>
+      </#if>	
+
+    <div class="controls">
+        <div class="sui-row-fluid goods-upload" id="goods-upload">
+        	<#if showGoods ??>
+				<#list showGoods as showGood>
+					<a target="_blank" href="${(showGood.goodsUrl)!}"  data-toggle="tooltip" data-placement="top"
+                        title="${(showGood.goodsName)!}<div class=&apos;sui-text-warning&apos;>￥${(showGood.goodsPrice)!}</div>"><div class="img-round">
+                        <img target="_blank" src="${(showGood.goodsPicUrl)!}"/></div><span class="goods-name">${(showGood.goodsName)!}</span></a>
+            	</#list>
+			</#if>
+        </div>
+        <button type="button" id="goodsChooseBtn" class="sui-btn btn-primary ui-upfile-btn">选择商品
+        </button>
+        <div class="sui-msg  msg-tips  msg-naked">
+            <div class="msg-con">商品不能超过<label id="goodsCountlb">${goodsCountlb!20}</label>个</div>
+            <i class="msg-icon"></i>
+        </div>
+    </div>
+</div>
+<div class="goodsChooseJsonList hidden"><#if showGoods ??>{<#list showGoods as showGood>"${(showGood.goodsId)!}":{"goodsId":${(showGood.goodsId)!},"goodsName":"${(showGood.goodsName)!}","goodsPrice":${(showGood.goodsPrice)!},"goodsPicurl":"${(showGood.goodsPicUrl)!}","goodsUrl":"${(showGood.goodsUrl)!}"},</#list>}<#else>暂无数据</#if></div>
+<@productSelection/>
+<script src="${ctx}/resources/${feMode}/js/productSelection/productSelection.js?v=${feVersion!'0'}"></script>
+<!-- 
+    var current = {
+        "522651216540": {
+            "goodsId": 522651216540,
+            "goodsName": "厂家直销维尼熊面巾全棉儿童面巾柔软舒适包邮可团购",
+            "goodsPrice": 6.8,
+            "goodsPicurl": "https://img.alicdn.com/bao/uploaded/i2/TB1tcZMJFXXXXXrXXXXXXXXXXXX_!!0-item_pic.jpg",
+            "goodsUrl": "http://item.taobao.com/item.htm?id=522651216540"
+        },
+        "522640639142": {
+            "goodsId": 522640639142,
+            "goodsName": "包邮卡莱依纯棉吸水毛巾全棉面巾舒适柔软可批发可团购包邮",
+            "goodsPrice": 7.8,
+            "goodsPicurl": "https://img.alicdn.com/bao/uploaded/i2/TB1pBZGJFXXXXc8XpXXXXXXXXXX_!!0-item_pic.jpg",
+            "goodsUrl": "http://item.taobao.com/item.htm?id=522640639142"
+        },
+        "44493350589": {
+            "goodsId": 44493350589,
+            "goodsName": "0019#何以笙箫默唐嫣赵默笙明星同款 简约纯色百搭号4567890",
+            "goodsPrice": 142,
+            "goodsPicurl": "https://img.alicdn.com/bao/uploaded/i2/TB1zrVPHpXXXXcrXXXXXXXXXXXX_!!0-item_pic.jpg",
+            "goodsUrl": "http://item.taobao.com/item.htm?id=44493350589"
+        }
+    };
+ -->

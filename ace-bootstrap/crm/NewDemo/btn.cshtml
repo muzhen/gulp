@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link type="text/css" rel="stylesheet" href="../Scripts/Plugins/NewCSS/tip.css" />
+<h3 class="full-width">按钮</h3>
+<p class="full-width">
+    <button class="btn">默认按钮 </button>
+    <button class="btn btn-success">成功</button>
+    <button class="btn btn-warning">警示</button>
+    <button class="btn btn-danger">危险</button>
+    <button class="btn btn-grey">返回</button>
+    <button class="btn btn-light">取消</button>
+
+</p>
+<h3 class="full-width">小号按钮</h3>
+<p class="full-width">
+    <button class="btn-minier btn-primary">Minier</button>
+    <button class="btn-minier btn-success">Success</button>
+    <button class="btn-minier btn-warning">Warning</button>
+    <button class="btn-minier btn-danger">Danger</button>
+    <button class="btn-minier btn-light">Light</button>
+</p>
+<h3 class="full-width">禁用按钮 disabled</h3>
+<p class="full-width">
+    <button class="btn disabled">默认按钮 </button>
+    <button class="btn btn-success disabled">成功</button>
+    <button class="btn btn-warning disabled">警示</button>
+    <button class="btn btn-danger disabled">危险</button>
+    <button class="btn btn-grey disabled">返回</button>
+    <button class="btn btn-light disabled">取消</button>
+</p>
+
+<h3 class="full-width">点击显示加载中</h3>
+<p class="full-width">
+    <button type="button" class="btn btn-default" id="loadingBtn1">覆盖按钮本身</button>
+</p>
+<div id="load2">
+    <button type="button" class="btn btn-default" id="loadingBtn2">覆盖指定容器</button>
+    <p class="alert alert-success">Content Loaded</p>
+</div>
+
+<p class="full-width">
+    <button type="button" class="btn btn-default" id="loadingBtn3">覆盖全屏</button>
+</p>
+<script src="/Scripts/Plugins/build/js/jquery.isloading.min.js"></script>
+<script src="/Scripts/Plugins/build/js/btn.js"></script>

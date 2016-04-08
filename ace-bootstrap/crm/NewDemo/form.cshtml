@@ -1,0 +1,500 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="form-info">
+    <p style="font-size:20px;line-height:1.5;padding:15px 0 10px;">表单模板</p>
+    
+  </div>
+<div id="newDemo-main" class="show-scoll full-width" style="overflow-y:auto">
+    @*表单实例开始*@
+    <form class="ui-form">
+        <p style="font-size:20px;line-height:1.5;padding:15px 0 10px;" class="text-warning">--表单实例--</p>
+        <div class="control-group">
+            <label class="control-label">用户：</label>
+            <div class="controls">
+                <span class="text-success">已签约</span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">单选框：</label>
+
+            <div class="controls">
+                <label class="cbr-inline"><input class="cbr" type="radio" name="IsAutoWeight" checked />开</label>
+                <label class="cbr-inline"><input class="cbr" type="radio" name="IsAutoWeight" />关</label>
+                <div class="onShow"><i class="icon-bell"></i>礼物必须发布在淘宝"其他>其他>赠品"类目下</div>
+            </div>
+
+        </div>
+        <div class="control-group">
+            <label class="control-label">复选框：</label>
+            <div class="controls">
+                <label class="cbr-inline"><input class="cbr" type="checkbox" name="IsAutoWeightCheck" checked />开启</label>
+                <label class="cbr-inline"><input class="cbr" type="checkbox" name="IsAutoWeightCheck" />开启</label>
+                <div class="onCorrect"><i class="icon-ok-circle"></i>提示信息，可以到<a class="blue font-blue">系统设置-决策人信息</a>去设置</div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">输入框（迷你）：</label>
+            <div class="controls">
+
+                <span>下单后<input type="text" class="input-mini margin-horizontal text-right" />小时<input type="text" class="input-mini margin-horizontal text-right" />分后，开始催付</span>
+                <button class="btn-minier btn-primary">分析</button>
+                <div class="onError"><i class="icon-remove-circle"></i>礼物必须发布在淘宝"其他>其他>赠品"类目下</div>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（中号）：</label>
+            <div class="controls">
+                <span>
+                    要奖励<select class="select-mini margin-left">
+                        <option>倍数</option>
+                        <option>定额</option>
+                    </select>
+                    <span class="input-add-part">
+                        <input class="input-small text-right" type="text" />
+                        <span class="add-on">积分</span>
+                    </span>
+                    <i class="iconfont icon-help heip-tip-icon"></i>
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（迷你）：</label>
+            <div class="controls">
+                <span>
+                    <select class="select-xmini">
+                        <option value="0" selected="selected">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    点
+                    <select class="select-xmini">
+                        <option value="0" selected="selected">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    分
+                    <label>-</label>
+                    <select class="select-xmini">
+                        <option value="0" selected="selected">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    点
+                    <select class="select-xmini">
+                        <option value="0" selected="selected">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    分
+                </span>
+                <div class="onFocus"><i class="icon-info-sign"></i>催付内容不能为空</div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（中号）：</label>
+            <div class="controls">
+
+                <a class="blue font-blue">获取验证码</a>
+                <label class="cbr-inline"><input class="cbr" type="radio" name="AutoFlag" checked /><i class="iconfont icon-qi icon-flag-gray icon-1x"></i></label>
+                <label class="cbr-inline"><input class="cbr" type="radio" name="AutoFlag" /><i class="iconfont icon-qi icon-flag-red icon-1x"></i></label>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">活动条件：</label>
+            <div class="controls">
+                <div class="padding-bt-8">
+                    <div class="input-add-part">
+                        <span class="add-on">
+                            <label class="cbr-inline"><input class="cbr" type="checkbox" name="testCheck" checked />交易满</label>
+                        </span>
+                        <input class="input-small text-right" type="text" />
+                        <span class="add-on">元</span>
+
+                    </div>
+                    <span class="require-icon">*</span>
+                </div>
+                <div>
+                    <div class="input-add-part">
+                        <span class="add-on">
+                            <label class="cbr-inline"><input class="cbr" type="checkbox" name="testCheck" checked />交易满</label>
+                        </span>
+                        <input class="input-small text-right" type="text" />
+                        <span class="add-on">件</span>
+                    </div>
+                    <span class="require-icon">*</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">时间选择：</label>
+            <div class="controls">
+                <input type="text" class="input-medium wdate">
+                -
+                <input type="text" class="input-medium wdate">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">地址选择：</label>
+            <div class="controls">
+                <span>
+                    <select id="dpType">
+                        <option value="1">全店任意商品</option>
+                        <option value="2">以下任意商品</option>
+                    </select>
+                    省
+                    <select id="dpType">
+                        <option value="1">全店任意商品</option>
+                        <option value="2">以下任意商品</option>
+                    </select>
+                    市
+                    <select id="dpType">
+                        <option value="1">全店任意商品</option>
+                        <option value="2">以下任意商品</option>
+                    </select>
+                    区/县
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label v-top">上传文件（中号）：</label>
+            <div class="controls file-medium">
+                <input type="file" class="id-input-file-2" />
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label v-top">备注(文本框中号)：</label>
+            <div class="controls">
+                <textarea rows="5" class="textarea-medium" placeholder="请输入文本"></textarea>
+                <div class="show-block onShow"><i class="icon-bell"></i>我是块状提示信息</div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label v-top">内容(文本框大号)：</label>
+            <div class="controls">
+                <div>
+                    <span class="tagBox">{交易编号}</span>
+                    <span class="tagBox">{客户姓名}</span>
+                    <span class="tagBox">{客户昵称}</span>
+                    <span class="tagBox">{下单时间}</span>
+                    <span class="tagBox">{待付金额}</span>
+                    <span class="tagBox">{付款链接}</span>
+                    <span class="tagBox">{H5互动地址}</span>
+                </div>
+                <div class="show-inline-blk "> <textarea rows="5" placeholder="请输入文本"></textarea></div>
+                <div class="onError"><i class="icon-remove-circle"></i>催付内容不能为空</div>
+                <div class="onShow show-block">
+                    <i class="icon-bell"></i>您已录入 <strong class="text-danger padding-horizontal">78</strong> 个字符(含店铺签名)，将被做为<strong class="text-danger padding-horizontal">2</strong> 条短信发送，每条按<strong class="text-danger padding-horizontal">67</strong>字计价。
+                </div>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label v-top">上传图片：</label>
+            <div class="controls">
+                <div class="goods-part">
+
+                    <a class="add-part">
+
+                        <p>添加商品贴士</p>
+                    </a>
+                    <a class="add-part">
+                        <img src="https://img.alicdn.com/bao/uploaded/i3/TB10x0ZIXXXXXXTaXXXXXXXXXXX_!!0-item_pic.jpg" alt="商品图片" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button type="submit" class="btn">保存</button>
+                <button class="btn btn-grey">返回</button>
+            </div>
+        </div>
+        @*表单实例结束*@
+        <p style="font-size:20px;line-height:1.5;padding:15px 0 10px;" class="text-success">--表单中常用类名示例--</p>
+        <p class="text-muted">*input宽度类名：<span class="text-warning">input-mini、input-small、input-medium、input-large、input-xlarge、input-xxlarge</span></p>
+        <p class="text-muted">*select宽度类名：<span class="text-info">select-mini、select-small、select-medium、select-large、select-xlarge、select-xxlarge</span></p>
+        <p class="text-muted">*日期宽度类名：<span class="text-success">input-medium(不包含时分秒)、input-large（包含时分秒）</span></p>
+        <p class="text-muted">*textarea宽度类名(默认宽度530px)：<span class="text-info">textarea-medium(450px)</span></p>
+        <p class="text-muted">*上传文件宽度类名：<span class="text-warning">file-medium(450px)、file-large(530px)</span></p>
+        <p><span class="text-info">表单中左侧结构control-label的水平对齐方式和宽度大小类名：</span></p>
+        <p><img src="data:image/png;base64,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" alt="control-label控制样式类名"/></p>
+        <p><span class="text-info">表单中常用的细节样式类名：</span></p>
+        <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8oAAADxCAIAAACcWNmQAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAgAElEQVR4nO3dMXAayf4v+t+5dQqSM5FIRN2qpRxAYoJbMwmcwGwiNoBTt4wScQLL9epJL4ANFifiH1gKjBLhwCgRt26JE6yUiK1bwoGtxJxgIWFeYBQcUbVeNlgULCTLBguJboBAo5nppocZkGx9P4FLbnq6m2am5zc9zfCXq6srAgAAAAAAJ/y3u24AAAAAAMCXA+E1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA45q+mqZ8+fVpwOwAAAAAA7olHjx7NvK15eG2zUACAmX369AnjDwCIwHABc2JzohmLQwAAAAAAHIPwGgAAAADAMQivAQAAAAAcg/AaAAAAAMAxCK8BAAAAAByD8BoAAAAAwDEIrwEAAAAAHIPwGgAAAADAMQivAQAAAAAccwfhtaIojmQTLMc0M2tbS2UKbitYNT+DnYYBwAT/UFLYHKxUpDQc8gDzYCdycGQrHNoPBPNH0UVw9pJGo8HJpkvRZtYmKopi+pIuA6sZnG3tlKl9aVSFtp38NhP7fU3dEAC05jT+mB6GUwuZWoJpmTjkARZsamjhLMH5MgwFXx5b4bXgDqHLJr5n28mm3X1Z4SynBH6Zk6jaWDjn0NU1yVjXJFFbEc7BAKbmPf7Yr11wgoBwDgb43IjMEtLt8/ucxiK4n2yF1+I490b580w6uj1V8AxH3IBVG9QKlqnd1jQ0102BT7KxonxL898AYIng+GOa2Q6RW3CcZmAcALBP/NrV0lWuMYowzqBxpt5wgH/xFhRe63bEqdd5RiJTwqxCtDu0yD4tUqbptJNuelu3dET3X200j8MMYH4Exx9jZu1W9psx9f6V9lXcuQJwhPj8sfFV0/QZKppksFomfL5mDK8FTzZWLwc51YnMAIk0bIYbylbL5OTXvhHOrWEcgQAcCx5/Zq6dDNNXkxJEphIQYQPcFe0lLv/rUoIHqW4+2zi9DV+YGcNr1myQcT9jvSR+2pjHCcZ+mVPXTYpUOilktp4BeJjmOv7McInu1DE7OePqImzTSgHAEmeXZ5guNOUsNjMdmjCV9gVb6Npr/v1Q1oYzrOWYmmHqtJCle8FTZ685q7pxUAHMm/j4Y5yO4gfi/HvN2tp1eUy/AWJ6a0t7GsZwAbAAxkUj/O9ZcbKJL02BL8yi115bmsMW3PmmLuTQ3Y6x1GCRrVgZjBemnLvSnDXcAGCH4PhjfzhiTWjNMCPOOkkDwMz46z1GRCLpqfkB7IbXM8wum87lzFayHU4VPvXGtHHOjPO9B+2rjnybCuAL5uz4Y2mtM//bS5YWZVoqHwDsmCG2Zm1ovHjGMQsTi5i95t8QYX33SHw3nUcYyi/T+B0Fp5ZzGeFwBbBjhvHHyNI8t+l3KnQbss7xrAyItgEcIfhtRW3i6I/REc35DtWcGw6fGbu/2ih4L5WzK5suXBbfU+exT4vcAp78LbhICwCcNY/xhzNxJVjvzARDdsfrBXg4+Ne32htZuvzGPDgege+/zbylU3dRjTlH6Q7OSStjThWoLZm1SMt+yTZLAPiCzWP8ESRSr8iCt6kNwCIxAKeMYgDjATjb8WUsylJ+eAhmf+61pYh58rdpfuM6Rc55xepSS7p9uWnMKbLTs45AVjtN003vN00ycy6RpzYP4EGZ0/ij29D0b9O7bTO3uWH4ohUn5sbpGWAGnBO99ti3dHxxlm6bJuLgfYD+cnV1ZUz99OnTo0ePFt8aAACMPwAgCMMFzInNXWv2xSEAAAAAAKCD8BoAAAAAwDEIrwEAAAAAHIPwGgAAAADAMQivAQAAAAAcg/AaAAAAAMAxCK8BAAAAAByD8BoAAAAAwDEIrwEAAAAAHMP81cbFNwUAAAAA4D6w86uNf51HoQAAM8OvHAOAIAwXMCc2J5qxOAQAAAAAwDEIrwEAAAAAHIPwGgAAAADAMQivAQAAAAAcg/AaAAAAAMAxCK8BAAAAAByD8BoAAAAAwDEIrwEAAAAAHIPwGgAAAADAMQivARygKIpTOcWLcoS2OsGqF9zCh0xhs1Mm5792MgPAnFg69OY9klsaNB4s5o+ig23dbt/jke66FUDk1GehKEqj0XCiPTyNRmNUEWuQGrVB+yors6XWjkqYlKPd1li4LkWXeQG99HCYdubUT2RqCXbgI4bPzcyngAWcx4WqmJwX5tqUGZiOPMbEe9jyubsy89NPP5mmL9bHPVne+zi//M5urvPbu9TU0pytcbrfTlNy6vQ3XrpTTfoCPwtZlmd+1WpOTp7JS8Y/mP78+fTVsyeyHFp59ur05z+5pYkUaD8D36zjz1wPKFbhs1XK3urPj3sbh/8Z/4/Vk3Z6WPuhGxnzsLYdp/18ktpraPcqgAUSGC5ETgE2N5w6DrAyGKq4PQJoOXuWmZrNdGTgbGhMNKR8ZmOFzUj4Ps9eBzMLvdxxuLqhg2UtzoL7nOXefRbGaQPB6UPTeWXOTPOootku9Bkzyv3qTrK0VKg0ZKmv5teTee+HrOw2bmhcJcKZwNbNnRvfy/2caLn3Bs3i7uDZYUCTNL87rdpdTlfX1E9Q85IvtkHJfO0oG3azcgPcqZlPAcIbzn7Oul3FzQggPitsJyfnZGQc//nnCN2gYTaAPLCxYtaY/eOenPr+x/Gk2Nbpz7/95/vUSkiWnzx79eHX60x//nz66tlKSJZvT5x93JP3Tt9990SWQy9//P3q6urXD9flpA5P32wYZlI/7smp79+Nig+tpL7/j/nVz8c9WX55+P13T5/os41n7+TQSuqw8dtNfm0zxtV93NNdtKXe/cYtxNi2305T421Pf+P2g9VL6lG3n2xd9/TNVCSjiqur3xqH15/L3slN37LSBfrc/MP6wj+LhU1dc2YWjRmu2LPON3//9i4lb334/fp/H/fk0JuP2ipMi+U3VeT92pleFRh/NHvA7Q9ReK/7/cPWTb/8fLJ2q5OeGmePrgtP6Q89zZ5jvlteXf3+8WRLl67Z6tfTVOjpXuP3q6urq19Pnj07+VVTK6sbZ+te/h5l+vfkX1PjvL+ePDPpMoAFmDZc6E8Bt47TvR9Hh9ufjb1YSDMePJOfnfz/+g1vYZyzrnjxjGF0MrTNMAJcCc0K61+9fXgys/EzcDLzzw7c2j+nscLm7LWd8FoOpU5//nO0Y8qhJ9+d/np1dfV7Yy8mv/rxz6urq98/vJycNq5+PU2FxsHRxz1Zju01fr+6+vPPq6ur/xw+DaVGG//nJBWSzUI9OZQ6+c/v1+XEzD8cVrbf3k1OX3/+fJoKPX3z8U+TZpgEWL/e5OYVYlrp6eSOD7cfrIfXsnxd2G8/vnp6PSAwqxj17c9/Xrd60res9Kl9zvqwvuTPwsFxylJ4zU83Da/NQp8bf/764VXsurd0m3OCJ1ZoNbU6S8O31vTx5+fvn4Zejc6Fv73bGn/S1va6305T1yPV1W+nqVAotNcYFf5x74nJrsA49G72HNZu+evJMzn1/X9G6Scp+dnJrzdb/fruuydPX/14fQz95zC2dvKztlZWH3I+96kfEGvXMq2Ok1nrt9NUaJEL3QDGRBaH3JwCrn49TT25HiRGB/L1IPDnj69Co79HwfXP+g11WOcsXjwz5fRkNgJcWQyvtQM7fwSeOj4bTzr8bY3jjGm2z2issBle23pySGI97nMTueWVCFF8Pe4lIkmOROiy1yciKbJdK2fk0Yp9b2hF1t4GiURkicjtpoFaLrozmdHGgURqY5lRVyIgXZdzqba6zCYZsl283Vdj2ZQsEZHbF89k3P86rvf1zTDRLmd3aauQDrqnFDKlbdx+sM719LodnnB6I3R2pvbZVTTPisON1OhT8sUzGf91Gaz024zvS/DDYm3+xX0WRFa+5jWP9RLa+32N225n7FYyiWTyhRpKJ/xuMqzomGxiLEH7X92r7OrmrH/5y5J79Cl6orlaZX2ymkJ8r/MEI/56q01Eg1aznUjEqs0LIqILtRZfCZrV6lrbzmgOvXJNu3uxdsuLs1JrbSMZGKUnCo1Swnu9SaeWSxel7UI27CEiovb5WS/k9+lqnfrYkIYBK3F+PH55qVxtzrUOAPsuzoq9dGY0SJAnnMnEfnhb7xORO5zORd6+yJdK27u0tZ3wCRRmPGfxT5HTwhjzEUC3qMOR84hIIcbFJKxVKCO6cWb0X+OQ9XDGCntrr103f8r+ZWMiUb/drKnV1kW7rqotCq4Yt+13Lody3DdOXlrykSmXefLUbP3L1qUc+mpyAPj8MlX7AyKJW+ygmc/kvbn3ca+NQjStYPaDZXJw0g7J66UztZ2LBM2r6LZbQ9/K0njL5eXHoz9Y6XrGzhT8sFibf2mfxTX+Iz60eSw938P+k5g0JXvi+XKcBu2jF6svBqeFqMesBM7iOWP773JpdXDtlT+5+XV5KRTbiCVCkYB3sj+I73W+xyu0c95eD/TrbyORE397p9VZD/TrFTmyZlrrzSBHktdL9fNLmvQjq5ZRuull6PF/fUv0eMs3jrYHnYuWHLyd1XR5NGeH0b3Ez8z627gUW/uSeZlLy76h2ulS0LhjAdwb3ZZ62aqvKruaNH+gRyQRSZGtXCT6Yt+/dSIUXJP1UyT/9GQ2AliiOzZZR6v4yUhXgmmBnKHpgY8V83zu9aBZSEQ3i+rAJ8fTb/LpkLPFdyvpyYVR3uFLoX51Z7MWPngZceJ5PPPtB5dLuAq3+cwwM13cg/0sJpfs/AndyShjaU7R6tTjpApixr5uXzwRqb+tG6ZNtJHTZPA1TkVo38VkQ5G2Oc0bzVd/PD38LkLV18//Ed2u9qdvYxCQI+1qs9tuqRHZ7w1G+vVWv31+Jkceu0V2aZfgJT9L6OXpyRbt5iud0f/7vcvbGfh9K9Lzxvkn7UvaD1SXQlYnyTxe3+f6fW54YEIv390ag48mwXS/3x8S9Tv9gWGjeZ7jxgwjwARrWNYyfck4AsxwMnJ4kH8wY8UcnxwyUCv/8mydFkZzjtRWe6bZJO+y67jVpqCPiIh6vbZg+Z54oRGfnk1a9i+rzV8Gcc8ohmy3VJJkbjzZqWSzFxuH5eAk1wyFTAj2g/DJTG1dEo0u+/qdDkXiPmYVHp/f1e71xtnbbZXIz0mfivVhfWGfhQ5zxk7MPNaEsJg09aIUf97L1TLXyx0G/T5JkqG7+LE1/xYha4Jk3u/a7Q1EE9loInmUXK3UUpGoeTbODuMPxerVf6uXUmhLIq9frp2dyc3HkQM3kdtkl9YcM912myLaKS5WLdKyf1lzyGr5fF5fcCt19Hz3fagQ9ZC0pJu3srTjsXKaFqIYvvUvWBpTt9MmYtwFA7gvPD6fS3ucanUquzv9rYNXanr7eKV8s+BstKHgOW7WeIaIjCOAFn804Lyk3dDqca09KUxKE9/c3IMZK+Y4e+2W3K5ms9UnIuo3S9v5FvWGfxizyYmNQX40g9O/KO8XL4UXgogJxFLy29y+2ieiQbuSzw+erYU4M6EXpfQubRVuH1xWCyEion5/QML9wJlnum1YLpYv+kTUrRWK7WdrIYldRTCeWSruj7J3Kvl867oMVvo0dj+sz+SzECQ4VNmJy03X2uoyaKcbJ8HxzSaByLr/uHh0cd1dO7udNZPu4t33N1vVbXVm3VkDNRdO5NXRjHWnWW8/DnNuNLJ3GHcwvPI2n2+H/F4i8snhcj7vjzCv1S4nx8z718W2rhtZtQRiG/L4kKW+mk+Ec6pmbiywtp1o77yu9onc3oC/3mLNX91mvP7hfBDaq6ZJYK073U49ibJyXutdtpdl35d+txc+X6NTAAUTGf8PufzoexODTi2XSBSaAxoH19sJOfrdlnc/W7rQbShmtlPkdRXcEcAY6epeIs0pQ/f3ZMPZhmvh4ETMgxkr5rk4JJg6TF3uRhUlHE0fS5lC6qvWRcdkRw2sF3LL5aSihFf3B7GUTD6voz3vie4drQ8KcUVRopmqXDhIBzlznc23+78M6zv/0IQ2+abVQog8odiT6rd/V/JN4X4gErsLsyIP9lfDSvifx+7M6Mt+7Cp8icJBqPptVFEi2VZkTR6XwUqfyuaH9Tl9FlqcW2xzInLnTpeui33Hyb5E4TCkZm+6K2PSXQ2zNXbaDKxhnbih2Jy45cxhsleIK4qihJ+fyYW9ydcFzbB3GOlxSB4Or79MJD0OycNImL0zhVKxwf5qWFGSx3/LGLqRVYsnvncYUXfjiqKEVwuD9aPMrfjdHUxtxarZQm1Avscry2qrrS2UMyM1+Vu8t+d3RdRtqb2IHJieEWDxNKcA8iUKh8k/iquKoijRdNmbPUgH3dSp7O50UlsJHxF54pktaX+33L69oSCrp8hbbTOOACP8i1vtuG2cAdHlETenYfwBjRXzeByJHT+frE2ey/sATXtWzqJ/6JHvoX1Y4k8yYr069ZF2Mz8syZgu8ly8yfObTJ/ONrUu01pmfh7fxP341di78OvJM7PHjvI73EjwIxD57FhP+Lqd8uvJs2eG54kBLMJ9Hi4snyINI4Dp4+1Yz7zTZuDXY/XxnVPLZz2qz5D2OY0Vn/+vNjYL4c3Ll6e5qIeoWz0qDdZyQuuAv0h3cqvdgof9YZlO0/JTdJuIlMAimHNyl1CwWG2rdLPRxuV6phMnukmO+74P32feWCaSLNfWsmE35+4BZxWHpd3J+EmZLhCamnPQPD7ybxz5BGsG+HLZPEUaRgDWfUsS+AYFH/9kxCqWvzplqgc1Vvzl6urKmPrp06dHjx4tqg2Di/LObrF63hu6lkIbuZfr8gNYlTOjZl55ToeN8ffUFg8fFszdYsefe2bQzH+rxg7WP5+bp+3y5tHymwfyM8dw79yz4cL2KfLzGwHEfWZjhc1d6z6E1wAANzD+AIAgDBcwJzZ3rXl+tREAAAAA4IFBeA0AAAAA4BiE1wAAAAAAjkF4DQAAAADgGITXAAAAAACOQXgNAAAAAOAYhNcAAAAAAI5BeA0AAAAA4Bjmz8osvikAAAAAAPeBnZ+V+es8CgUAmBl+hg0ABGG4gDmxOdGMxSEAAAAAAI5BeA0AAAAA4BiE1wAAAAAAjkF4DQAAAADgGITXAAAAAACOQXgNAAAAAOAYhNcAAAAAAI5BeA0AAAAA4BiE1wAAAAAAjkF4DbYoinKv8tss0PHq+LTVCVa94BbCl01hs1mss5voXnUw8wzECzTmZG071zZzSuPsADb3BIxU94qlj8PODuNIAwS3uuf7GPNH0R+Abrfv8Uh33Yp7QagrFEVpNBpzbYelKjiHlraQqWc4beZGozFqA6vwUWbtq6zMlvpqVMKknJnbv4DPCD5fpruH6Q4jHhcaS9DWYtzqrvZP1qEheIa+J4fVnAa92WrkbyW4DyxqyJr5dD/vOMHJ8jmdOTm12a+FU8hc413Twjl7152fDe9zeN3MK8/psJEJOpZ/0CxtpvfP/6CVvfKTcuJ8Q7xwB3Qr6W/OVt4V4h5mutW3zOJ8V3D2VPHz7lSWhoDZsgmWP/VMrI2zeQUO2pX8dv6H8+HS41hqOxP3uQ0t0Z2KdKVZar+DY+hnyKnDZ7bCJxnmfRTPWJHNHUNwW10tju+Kk2PQ9GCc4dCYGlxaDcp1V+CsSJdVLP94n+ug5xRLbV7IkNV9n/5mptP9zBveQfn3beQXv8bjXPux8ovs4Xd+NrzP4XUw43S/tM72hxsnjaSPqFspO1u2I5x/yyyWumLqeYu/7dQUYyHaPMbzqFW6GlkFjt6mI1WMC+lXd5KlpUKlIUt9Nb+ezHs/ZGW3cUPj++XMRfE75M7HlC+U+LG5uKNY3GyXxzPXIrIHiowMrGjYdHJ06p7v4EExtShWP5i20ObMuilLgwb/Zp3VesX3gUkt8x6yhgvfcMHlm+5pptl0Kay7r/xZYcFWcW5TcM7CNO2EqNthFjNnP4OZw+tmXikuv1lpF/M/nA+XVrYOvvPXdr7dr/dcj59u57IRL9H1zN3+2/PekFyaybtmXjnzv+rk/+vfw9ib99thqVPNZbd/OB8uhTZS/vpOK3Z7KreZV4rLr0L11/v1Hi2FUm/2kgE3t3XjKcM/XEuhxMutTNhL3Ur6m506Ea0qr//n/xP6P/+7TlRX2i+Ns8lT33XkfCd/1nM9fpqZzEYy3ilRVy3tZIv1nuvxWlrWHErm6QJv2byvFt8VoqzeBxxlMD1yZj7ZWG2D4B1t1iTNzebdWvkskv4gS0QkySvh4WatlZWDxIgJtH/Yaf8DoNmtb98V6KtHme3iv38Z3jpqtEfBRu7luuyhfjX79dnKh1xEIqJ2Obmqblz/h5r5hBorrwdu1Sg+HAnkNDkqzfXVo/SL0bCauXXvQ6dTSa+WfIVSRrZ8m9nBwG6Gu1XaGk3jA900sHgVli7R788iFtK8cVboI8LSoLHIC4+FG5/vJuc4s6NvoOZX073M+/F4sL5aif+vRPX/3eGcHPvN8m6+cKYdVViHtulQINQwk3hJ7G2Lz/Wy4vKps8is8u2bGjprD437t8tdszN7Xd8/Xjk6qGZJza9uJlefbB29r3n7aj65War9mA27+9XdZEkqnNRkaTT87+TlUCHqISI6Lp4fVBp514DcdFFKZy/XTxolb/+inH2ukhwzqett5PCkVpA6lfTqi2O5ojv33dKpvFg/ixxUGgGJurXc5mqOPmTD8ULDl1eK/tFx8v/99/Q3rVluytRf530HJ7Wc1K3lNpM70vtcRGK+04vSZlpdP/pQ8FG78iJ5PH5rrPSpb1mkrxzuCv68153s2eLLJa1el5umCFZnks0TLTSioz8HnWql+tVazk9mJ07WreTZ2v/lT2C3y5ldSr9vRCTqvs/+I33sH48IZ6r7sFTN3zpquu9fJEu+QqUhS4N25UVys39wlA4+DoVe1JovI2E3dZvVtktVWxSRiah5VgmvZHjViw9HpjnNj0rTyPlt5fLgpFbQjjbGTJ33mWRpee+AFVvb3BnEDzdddY7MiVqaCmVd7lrdlvOWrXbm1N7THfuTwUFkMtLIzqDnIKv7wDyHLE+88I5uznGMo09ObcW+flGofciGL8vbu7R1kvgfvoR2Q51OOf28uvJ9JReQBu3yi9UX0mkpQexD22QoEGoY0e14yYSDXafd/RZ2ErF6x0N3pc2/8L7Ds6GtxSGJ9dFsirwSoTKtx71EJMmRCJV6fSK3FNmuRcZ5vaEVmc5upm8jEVkiIjcN1HLRnTkabRxIpDZKddW0rkRAui5n56zVXQ8wJ1ovzoq9dGGUnTzhTCb297f1dNjsvDQD19NsSpaIyBNOb4S+PlO3IhHWO22eFYcbh6NO8sUzmePVKvHSp71lSayvbsy3K4imDfqWZlDEL0ZZxRqrYL3kyPGmPW65pXUrmc2S+gut7BX8bmNmzsgy1/Z/xvqXvyy5R3uxJ5qrRW9eMRkoLt7uq7HtvdGAMzrejuvrwUgw4i+22hQODFrNdiIRqzYvMnKALtRanB9dWxmOzNojflS61rYzmtGmXPsuEtXV1KnltovSdiEbnvHW09S4TXwxg6408T12wadzm8QHPeN/jdfPk4CY3wPzHvT48belS6zZ9oEFYR597nA6F4m+yHs3Wvu0dZLwTSun1FrLlQKjUSVRaCSI6KLEObSnDBrcYWESL81AfCmFIOPOwLndOkMLib2GyrR83V539/vYmL21166bP2X/sjGRqN9u1tRq66JdV9UWBVeM2/Y7l0M57hsnLy35yJTLPNmo21IvW/VVZVeT5g/0iJyJKeXgV+N9XPJ66Uxt5yJBMn2n3XZr6FtZGm+5vPz4uoWMdD3DWxbtq7E5d4Uzq64n5fBnO+wwLueaYX2I1cyaKjzxfDlOg/bRi9UXg9OCPkAis/DCuCrGUvu/cMG1V/7k5tflpVBsI5YIRQLeyYnHeNRcti7l0OSoJZ9fpmp/QOR7vEI75+31QL/+NhI58bd3Wp31QL9ekSNr0xogPBwZc1o5Km+GVZK8XqqfX5Ju7zn+r2+JHm/5WKtLpjBe2lm6W2V6UrR6CGuvUcVDQN3fuoPF2CSnDhmnBj2R0uyYYdDgxNPi7bS5pmXeeEefFNnKRaIv9v3Tg+vrUWX5duKUQ5s7aNjZ1inGRSP8SR/TrWajq8u0as4YdS+u3Azm+dXGQbOQ3HzrjT1bicTja0l1x3SOdmaTFcREtKb7+nxoPuuITbhcJPpO3W7za09Wurj70RU8s02+OnXMzDCdY3XmRndDzWwTty+eiLwu17tR3edhvB9nHOastv9L543mq5HORbVefvv6+e7uyl5l2/o9mYAcaRebXXmoRuQNry/SL7b6wd6ZHFlzc48p+8yOSoEaXcaTbOjlaWaYXc1XQoW41RBbZEaZX4LxpGixCaJndF35nBUU9y22489eL6DeBQ8an8GIxD4n9vv9IVG/0x8YZop1h+eG9cLtNMwm1plFixVJ29lhjNe6U/N/BvuPsDmG1wO18i/P1ul40G+rPdNsknfZddxqU9BHRES9XluwfE+80Iibpft8LrX5yyDusRK1Cn+uauuSaHQE9DsdisR9zHfq8fld7V5vnL3dVon8nPSpWH3lbFfosE5jU7eavUphIp8a/wh3dlpLX9pFKf68l6uNI6VBv0+SZPgsdEG58XRotf1f2CDF4vYGoolsNJE8Sq5WaqlI1DybtOxf1h4F7ZZK0ujxLf5QrF79t3ophbYk8vrl2tmZ3HwcOXATuRnHlH2so9LsKNYME912myLGSTWfz+sLbqWOnu++D5ndFyHizkKJ7yqsnHZOwJZaNVlBYbWF4o2xmcHxg860xns16DllYU3inRM7ld2d/tbBKzW9fbyi/2qz/vC88C9rYoHphdtp2DQix+AMsTVnQ84OZjoxZKyCdZfJdFs77nBvn2N47Zbcrmaz1Y97Jeo3S9v5FvmGf9zeHYnILSc2Bs9Hky/9i/J+8ZJkezdCgomMfzWXjxxkwx4adONThAsAABzTSURBVGr5dF7aPkoHDXttX3ONKnySGJaL5VguEZC6tUKx/Ww7JLHfaTCeWUrul0O5REDqVPL5FsmjFjLSp7HcVzN1hQhL++ts+7fjU9emxbJOmYLnWuMt6VsbBiLr/tXiUSyXDEiDdmVnt7N2EDJMsvKnvWdr/5dtoOa+zrmvn5PRadbbjyNBD9Glee5ALCX/I7cfLWVkadCu5PODZ9efgjsYXnmRzS9tHHqJyCeHy9l8bO+D3btJUwgflUSXxfEw8f51sb2WM+48REQUWNtOlDdfV8Om33ychaUpz5kjbEv3jozTsVPnzsWXnXAaI57B2GYyO0KN78h+jfwNnRr0PmvX5zjm0TcKrk8Ssu/J1ttvsqXQOMA2PzkGYhvyP65jAeqr+fX0IPshK35oizfMmbfPmb2eJJrut41Gg79UQ1cUPwP/VZuT5ffNPH8UPZg6TF3uRhUlHE0fS5lC6qvWRWdgzBdYL+SWy0lFCa/uD2IpmXxee/dHfInCYfKP4qqiKEo0XfZmD4z7qCcUe1L99u9KvqlNFRlfVuTB/mpYCf/z2J0pjApmvlNfonAQqn4bVZRIthVZmwTRrPSprPbV7F2hZed+qyOxtaIoVpdb8c9wZIiPtRoGrDzG/95O9yUKhyE1G1cUJZqpyoWDjMloaYwSRO6psdr/JQ1PLG45c5jsFeKKoijh52dyYS/BWxjhie4drQ8KN5/C5CCQHofk4TDk903+Ewk7dT5jEzkqR0Kp2GB/NawoyeO/ZUx3nhF3MLUVq2YLNZPxlYjYh7BggHuHexTnGLShW0kr6UpXW4uDpWvbbBxJRN4RKxq+20FvTua/g2nPceZHX6eyu9NJbSV8ROSJZ7ak/d1ym3ty9MT3DiPqblxRlPBqYbB+lJHdFg5t0YYJ4p+jddeZxm0nf7D20rl+QPPbAe74bHhl5qeffjJNX4CfT9ZCbz7eVe2yLHNf/7gny3t31jq9BffVtM6xkJ/10ihdpCLTPNrEyd+6nKZ5pjZYsExWBk5psizzmy3efsF67787HH++bPzjjp9HpBzOqzPsqzOXwxpGbqX8/P2rd7/xGyDSSE5+kd7WpfDf8t0OepYIfnYzl6+F4WLCdNcSTOSXo3tJZrNaptWWfEa71j341cZmIbx5+fI0F/UQdatHpcHo2cB34r5P+91pX4l3jnGOhHOHdFI4/wrbNKfpS7paJjlNr9oFr24FJ+8bhltsgpuQodMmRVlq/33fgeFOcQ5J1sSnbo+a4S6Wg5uYHq2mR/HUnBe1lrySdLDZxtVinDsD4iOYtvz7OeiJ4I/nTtUCxgOctc/wM7Dw12LRTPsMqwGs2y/iDb7zXesvV1dXxtRPnz49evRoUW0YXJR3dovV895Q++NH99Lk99juqgGfUV8BzGix4w8AfMYwXMCc2Ny17kN4DQBwA+MPAAjCcAFzYnPXmudXGwEAAAAAHhiE1wAAAAAAjkF4DQAAAADgGITXAAAAAACOQXgNAAAAAOAYhNcAAAAAAI5BeA0AAAAA4BiE1wAAAAAAjmH+rMzimwIAAAAAcB/Y+VmZv86jUACAmeFn2ABAEIYLmBObE81YHAIAAAAA4BiE1wAAAAAAjkF4DQAAAADgGITXAAAAAACOQXgNAAAAAOAYhNcAAAAAAI5BeA0AAAAA4BiE1wAAAAAAjkF4DQAAAADgGITXcAcURblX+W0W6Hh1fNrqBKtecAsBAAAeMuaPoj9s3W7f45HuuhX3nVAvKYrSaDTm2g5LVXACTW0hxmy6FG3mRqMxagOr8FFm7auszJb6alTCpJyZ27+AzwgAAODhuM/hdTOvPKfDRiY4p81ZGbrv09+cb8xc7yy6lfQ3ZyvvCnEPM91mb7DMt5c4cZtgmCtiEt0KZp4hm2D5pnl0UfUkhVfgoF3Jb+d/OB8uPY6ltjNxn9vQEm2TjM2z1H5LHQgAAAB89zm8DmZsne9n33xoo9a5sdkbzhc7tZemhnT8baemGAthrZqYLXDU1cgqcPQ2HaliXEi/upMsLRUqDVnqq/n1ZN77ISu7jRsa3y9nApvfIYiwAQAAnDJzeN3MK8XlNyvtYv6H8+HSytbBd/7azrf79Z7r8dPtXDbiJbqeg9t/e94bkkszDdfMK2f+V538f/17GHvzfjssdaq57PYP58Ol0EbKX99pxW7P1zbzSnH5Vaj+er/eo6VQ6s1eMuA2bZK2WKk4mXY1L5+IqK8eZbaL//5lOC62W0l/s1Mnqivtl8bZ5KkdEjnfyZ/1XI+fZiZTjoxOIOqqpZ1ssd5zPV5Ly5pg1TxdoDfYb/Pe9JIoq0sXRhlMZ3NnXnZstQ3GiliT2bqFJfrNu7XyWST9QZaISJJXwsPNWisrB7V5tNGw9g877QcAAABH2Jm9ru8frxwdVLOk5lc3k6tPto7e17x9NZ/cLNV+zIbd/epusiQVTmqyRNSppFd38nKoEPUQER0Xzw8qjbxrQG66KKWzl+snjZK3f1HOPldJjpnU9TZyeFIrSJ1KevXFsVxZD5g1SVtsc5zIK/9MdR+WqnlNsfHCO0p/05plcUj9dd53cFLLSd1abjO5I73PRSRmJ1yUNtPq+tGHgo/alRfJ43GrWOlTe0OkGxfXS/xlIXcS6gnG2axV0SLRM3/1s2irPNFCIzr6c9CpVqpfreX8NO430xl6zkS1ePsxgQ0AAOAIW4tDEuujeVh5JUJlWo97iUiSIxEq9fpEbimyXYuM83pDKzKd3czRRiKyRERuGqjlojtzNNo4kEhtlOqqaV2JgHRdzs5Zq7seMJ0ynRQ7wS9fsFgxrqfZlCwRkSec3gh9faZuRSKsTmieFYcbh6P+88UzmePVKvHSp/WGJNaNI3faS0TTQk9L066mX+yzVCxn4bLuJUeiT20Uyy2tW8lsltRfaGWv4HcbMxtXYC+m/QAAAMBnb+216+ZP2b9sTCTqt5s1tdq6aNdVtUXBFeO2/c7lUI77xslLSz4y5TJPnpptSvmCxQqRg1+NI1bJ66UztZ2LBMm0E7rt1tC3sjTecnn58egPVrqe1bdpc3Mne8nCqmvjCmNjIabrIhxhrH2G9SFWM2uq8MTz5TgN2kcvVl8MTq9v++hL0E05G1fF2F+DDgAAAJbM87nXg2YhEd0sqgOfHE+/yadDzhbfraSVsXxzev6Fc7lItBPcbpO15Jx0cfe+l5i0U7w6ghvapK1OWy//mSeCjZzkJ8PC8dvcvngiUn9b7+pf0MbWk0hat6rbavsBAADAvjk+OWSgVv7l2TotxL1ERNRWe6bZJO+y67jVpqCPiIh6vbZg+Z54oRGfnm3m8ieEwzW1dUl0/WXATocicR+zEzw+v6vd642zt9sqkZ+TPhXrbS6sl3RMF/JODew4CzYcNMP3FI3/dap5Jh11UYo/7+Vq42Xtg36fJMlwncWPrWdoP5aOAAAAOGKO4bVbcruazVY/7pWo3yxt51vkG/4xDhxvssmJjcHzfCVUiHv7F+X94iXJTq5FmK38fn8wWZss/JWvYblYjuUSAalbKxTbz7ZDErsTgvHMUnK/HMolAlKnks+3SCYiIlb6fN6mzc21vSRCPHqbOc5zcOqaUyzrOmHq9YPu8Xnm300MRNb9q8WjWC4ZkAbtys5uZ+0gZPj5HuPstf32AwAAgH3zXBwSTB2mLnejihKOpo+lTCH1VeuiMzDmC6wXcsvlpKKEV/cHsZRMPq+jT3qzWr4nFHtS/fbvurUUIhHJijzYXw0r4X8euzOFdNBNnE7wJQoHoeq3UUWJZFuRtUkQzUp3/G3a3Ny8l7RYj+CYH2MQaTqDzom/WU/O1iWaliCyiEWXbrp4g8iXKByG1GxcUZRopioXDjJB40WM7qrP2NuW2o+pawAAAMdcmfnpp59M0xfg55O10JuP97B8WZa5r3/ck+W9OTbcGpvd6OCnMK3fpuSXGYybiFRkmkebOPnbtIqpL/ErZW3IysApTdcJU4vitF+w3kW6w/EHAD4vGC5gTmzuWvfgVxubhfDm5cvTXNRD1K0elQajp/zet/Lv+9yezbc5t09BvN9YE6umU63avycTwPwvHbImaE3nfTlfBBReLGThSdvimbWbkKHTJkVZav9937cBAAA+K3+5uroypn769OnRo0eLasPgoryzW6ye94aupdBG7uW67OyvAM67/JHJryrOoWwhNt/mYnoJYLrFjj8A8BnDcAFzYnPXug/hNQDADYw/ACAIwwXMic1da55fbQQAAAAAeGAQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOIb5szKLbwoAAAAAwH1g52dl/jqPQgEAZoafYQMAQRguYE5sTjRjcQgAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAY5i/2gjzoyhKo9FwZBNFUUQ2t1qdYO0irzpOW51g1QtuIQAAADxkDyG87nb7Ho90N3XPO7AzFj41FBYpyphNl6LN3Gg0RpWyCh9l1r7Kymypr0YlTMqZuf0IvgEAAMBBdxNedyvpb85W3hXiHmZ6M688p8NGJmi3qvfpb8437JdDRESDi6NstvjvX/7421dPNra3k0F+0M6J2wTDXKumRoqCheuyCQagU+fXtXE2r0B2P09awp/DttT+yeUB980BAAAACLm3s9fBjEPhztCRUoiI+tWd52VvodKQpf7FUfafafdpKeFl5Z4a0jnVLF2kbgzcZ6uLU6xx6teRKsaFTO9n3bw1mYXsgu2fpCDCBgAAAEfMHF4380px+U3kfCd/1nM9fprZzsR9biKiQbuS395/e94bkmvpcSw1eaGrlnayxXrP9XgtLWuCXvP0yex1M68Ul1+F6q/36z1aCqXe7CUDbiIi6lRz2e0fzodLoY2Uv77Tihmmw7uV9Dc7daK60n75rhD3jBqX/+H8D9dSaCP3cl32cN/LbW31bBg+lCUikgIrK6HXrR4RM7xeJM6EruDibFaZutI4BMN6XVHaBo/TmP2sXQdinMbG8g8AAAC4D+zMXtdf530HJ7Wc1K3lNpM70vtcROpXd5MlqXBSkyWiTiW9upOXQ4Wohy5Km2l1/ehDwUftyovkMckxIiJm+q2K9t9GDk9qBalTSa++OJYr6wGii1I6e7l+0ih5+xfl7HPVbENPvPCO0t+0rheHdN+/SJZ8hUpDlgbtyovkZv/gKB10s96LvjSfvOIqnKkbQVnqX5ydqaHYMqtr+MtCHJ3rnXFzFtaqaJHomb/6WbhV5v1sXN49+Xvq/L1I+zGBDQAAAI6wE167nmZTskREnnB6I/T1mboViUiR7VpknMEbWpHpbEhE1DwrDjcOR5PCvngmc7xaJV76bYn1REC6LnDnrNVdD0hquejOHMW9RCQFEqmNUl2d1t6Lt/tqbHtPlojIParsuL4ejEis96LbXopsHbTTz79WiIj8awdvoh59FWL4oScrwhN8RIZIsYILl3UvORJ9aqNYRmnm/WzaSNMmzbX9AAAAAHx2wms5+NV4CYXk9dKZ2s5FgkTUbzdrarV10a6raouCK0TUbbeGvpWl8ZbLy49Hf7DS9Vz6hH7ncijHfeP/Li359DkM+petSzk0aTL5/DJV+wMiifNeNAbNwvpmK/n9h1JAGrTf76Q387mjTNBkFQkXP8KbeS2HrnCb5UxK4C9ZNt3EUvk6jUZDvJ8n89mm8fQM7QcAAACwz8GflXG5iGjQLCSim0V14JPj6Tf5dMg0q9ttHpSy0sV1K2llLN+cuRiXy1hU6+xfw43UaBrd7YumNjzHx/W+zfbeX42xyd+jdP4EuXYrkSp0/xKJ9rM2tp5E0rpV3VbbDwAAAGCfndlrtXVJNFof0e90KBL30UCt/MuzdVqIj77x11Z7o6wen9/V7vXG2dttlcjPSZ9K8i67jlttCvqIiKjXa19XFC804oxNlv3LavOXQdwziuHbLZUk2c18L57g7aKaLsMcOpPpQt6pgZ396VWR2HGG7yka/+vUTLBZRwn1Mz+2nqH9WDoCAAAAjrATXg/LxXIslwhI3Vqh2H62HZLILbldzWarH/dK1G+WtvMt8g3/IPIE45ml5H45lEsEpE4ln2+RTERErPRp3HJiY/A8XwkV4t7+RXm/eEkyMyrr9wdEbgrEUvI/cvvRUkaWBu1KPj94dhCSmO9Fzx9Zc21eN3XQfr9fbD7demPl12oWEL05NUfLf240q/Cpleoen2f+3USxfjbOXttvPwAAAIB9thaHrMiD/dWwEv7nsTtTGD2CI5g6TF3uRhUlHE0fS5lC6qvWRWdARL5E4SBU/TaqKJFsK7I2CaJZ6VMF1gu55XJSUcKr+4NYSiaf1+ybhp5Q7En1278r+SaRJ7p3tD4oxBVFiWaqcuEgfbOi1+S96LiD6YOCXMvGFUX5evPt0tZJNsxZy8J6BMfd4s/Rmj6Xw5jBtISGASuP8b+30sX6WTftbextS+3H1DUAAAA4xdbPykhycns9eTvNHUgW3mvSypOgRQpqX0kQP33yszK3fl/m1toPbyRbqmaJiKhdfstaUuCJ5qvRSet88WwpnhV8L8ay5PV8eX1KphsLe9ab6TSwMb4Ubwwr54Le0bR+No2SG2YPw9ZhLdpBbA0AAABOube/2jhNsxDevHx5mot6iLrVo9JgLSe0aHvBxOM2bcho9cnNIhPS/IhTtwlnkYl4hC3+pG3xzNpNyBBnG2NrkfYjtgYAAAAH/eXq6sqY+unTp0ePHnE3nPyq4pwaNtXgoryzW6ye94a3foFxFnf+XgDghsD4AwBAhOEC5sbmrjVzeA0AMBcYfwBAEIYLmBObu5aDz70GAAAAAHjoEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADiG+bMyi28KAAAAAMB9YOdnZf46j0IBAGaGn2EDAEEYLmBObE40Y3EIAAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGOYv9oI9imK0mg0nCpKJJvN6vgNdvDtWG2MYNULbiEAAACA0UMOr7vdvscjOVPWbIGdeNBsLHxqKMwpjZNNl6LN3Gg0RpWyCh9l1r7Kymypr0YlTMqZuf0IvgEAAGAB7ia87lbS35ytvCvEPcz0Zl55ToeNTNBmVaxyuu/T35xvMMofXBxls8V///LH3756srG9nQzyg3BO3MYPc3Vbicd/U3MKljNbA0zz6KLqSQqvQHY/T1rCn8O21P7J5QH3zQEAAADYcm9nr4OZOYdBQ+Yr/erO87K3UGnIUv/iKPvPtPu0lPCyck8N6Wy2U1sR578z18Up1jj160gV40Km97Nu3prMQnbB9k9SEGEDAADAXM0cXjfzSnH5TeR8J3/Wcz1+mtnOxH1uIqJBu5Lf3n973huSa+lxLDV5oauWdrLFes/1eC0ta4Jb8/TJrHMzrxSXX4Xqr/frPVoKpd7sJQNuIiLqVHPZ7R/Oh0uhjZS/vtOKGafDR/rqUfrFfv2mnd1K+pudOlFdab80btRWz4bhQ1kiIimwshJ63eoRMcPrReJM6AquM2GVqSuNQzCs1xWlbfA4jdnP2nUgxmlsLP8AAACA+8zO7HX9dd53cFLLSd1abjO5I73PRaR+dTdZkgonNVki6lTSqzt5OVSIeuiitJlW148+FHzUrrxIHpMcIyJipt+qaP9t5PCkVpA6lfTqi2O5sh4guiils5frJ42St39Rzj5XzTa89rZyeXBSK2jaGS+8o/Q3LfPFIT55xVU4UzeCstS/ODtTQ7FlVsn8ZSEzh3o2txXJxloVLRI981c/C7fKvJ+Ny7snf0+dvxdpPyawAQAAYK7shNeup9mULBGRJ5zeCH19pm5FIlJkuxYZZ/CGVmQ6GxIRNc+Kw43D0Ty2L57JHK9WiZd+W2I9EZCuC9w5a3XXA5JaLrozR3EvEUmBRGqjVFeZ7VzbzmjaWa59F4maznJfkyJbB+30868VIiL/2sEbbm4OfuhpZ5Ww+DcXRRYu615yJPrUvgVGaeb9bNpI0ybNtf0AAAAAs7ETXsvBr9zXf0peL52p7VwkSET9drOmVlsX7bqqtii4QkTddmvoW1kab7m8/Hj0Bytdz6VP6Hcuh3LcN/7v0pJPn0PTTv9k9lnyeql+fkm8gHnQLKxvtpLffygFpEH7/U56M587ygTd7C1M8SO8qZO+/AjbbK3FjIzrm2dYH2I1c6PREO/nyXy2aTw9Q/sBAAAA5sfBn5VxuYho0CwkoptFdeCT4+k3+XTINKvbbR6sstLFdStpZSzfZLeTs0nr7F/DjdRoutzti6Y2PMfH9b7Ndt1fjbHJ36P0qc88Ef+mo3YO+2YTsX7WxtaTSFq3qttq+wEAAADmx87stdq6JBpNA/c7HYrEfTRQK//ybJ0W4qNvArbV3iirx+d3tXu9cfZ2WyXyc9KnkrzLruNWm4I+IiLq9drXFcULjbgur6aCbrtNkYTv1sv6TZr6+JvDdI5ZZGZasHDWSyKx4wzfUzT+16mZYLOOEupnfmw9Q/uxdAQAAADmyk54PSwXy7FcIiB1a4Vi+9l2SCK35HY1m61+3CtRv1nazrfIN/yDyBOMZ5aS++VQLhGQOpV8vkUyERGx0qdxy4mNwfN8JVSIe/sX5f3iJcmsaO2yOK7g/etiey0XGj9dud8fEBnmy/2RNdfm9RaD9vv9YvPp1hsrvz6zgOjNqTla/nOjWYVPrVT3+Dzz7yaK9bNx9tp++wEAAADmx9bikBV5sL8aVsL/PHZnCumgm4iCqcPU5W5UUcLR9LGUKaS+al10BkTkSxQOQtVvo4oSybYia5MgmpU+VWC9kFsuJxUlvLo/iKVk8nkZC6pDqdhgfzWsKMnjv2UOrlf3ekKxJ9Vv/26ygsQdTB8U5Fo2rijK15tvl7ZOsmHOmhXWIzjulvg3IznP3zAtoWHAymP87610sX7WTXsbe9tS+zF1DQAAAPNm62dlJDm5vZ68neYOJAvvNWnlSTAjBbWvJIifPvlZmVu/L3NrIYc3ki1Vs0RE1C6/ZSw1CGYaBSJKRnXtJE80X40y3phHXs+X1xkvGi3sWW+m08DG+FK8MaycC3pH0/rZNEpumD0MW4e1aAexNQAAAMzbvf3VxmmahfDm5cvTXNRD1K0elQZrOaFF23MiHrdxJobt1KKNvDkRp24TziIT8Qhb/Enb4pm1m5Ch04yxtUj7EVsDAADAAvzl6urKmPrp06dHjx5xN5z8quKcGjbV4KK8s1usnveGrqXQRu7lujzj06kB4F4RGH8AAIgwXMDc2Ny1Zp69vrVm4y64A4lcKTE9HwAAAADAwjj43GsAAAAAgIcO4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGOYv9q4+KYAAAAAANwHdn610Ty8BgAAAACAGWBxCAAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBjEF4DAAAAADgG4TUAAAAAgGMQXgMAAAAAOAbhNQAAAACAYxBeAwAAAAA4BuE1AAAAAIBj/i/WHHWto1CKCwAAAABJRU5ErkJggg==" alt="表单中常用的控制样式类名" /></p>
+        <p style="font-size:20px;line-height:1.5;padding:15px 0 10px;" class="text-warning">--表单中各控件大小模板--</p>
+             @*输入框模板*@
+        <p style="font-size:16px;line-height:1.5;padding:15px 0 10px;">输入框大小模板</p>
+        <div class="control-group">
+            <label class="control-label">输入框（超迷你）：</label>
+            <div class="controls">
+                <input type="text" class="input-xmini" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（迷你）：</label>
+            <div class="controls">
+                <input type="text" class="input-mini" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（小号）：</label>
+            <div class="controls">
+                <input type="text" class="input-small">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（中号）：</label>
+            <div class="controls">
+                <input type="text" class="input-medium">
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（大号）：</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（加大）：</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">输入框（加加）：</label>
+            <div class="controls">
+                <input type="text" class="input-xxlarge" placeholder="请输入文本">
+            </div>
+        </div>
+        @*下拉框模板*@
+        <p style="font-size:16px;line-height:1.5;padding:15px 0 10px;">下拉框大小模板</p>
+        <div class="control-group">
+            <label class="control-label">下拉框（超迷你）：</label>
+            <div class="controls">
+                <select class="select-xmini">
+                    <option value="1">00</option>
+                    <option value="2">01</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（迷你）：</label>
+            <div class="controls">
+                <select class="select-mini">
+                    <option value="1">全店</option>
+                    <option value="2">以下</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（小号）：</label>
+            <div class="controls">
+                <select class="select-small">
+                    <option value="1">全店任意</option>
+                    <option value="2">以下任意</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（中号）：</label>
+            <div class="controls">
+                <select class="select-medium">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（大号）：</label>
+            <div class="controls">
+                <select class="select-large">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（加大）：</label>
+            <div class="controls">
+                <select class="select-xlarge">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">下拉框（加加）：</label>
+            <div class="controls">
+                <select class="select-xxlarge">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+
+            </div>
+        </div>
+        @*文本框模板*@
+        <p style="font-size:16px;line-height:1.5;padding:15px 0 10px;">文本框大小模板（基于项目实例，目前采用两种大小的宽度，高度用rows值来控制）</p>
+        <div class="control-group">
+            <label class="control-label v-top">文本框（中号）：</label>
+            <div class="controls">
+                <textarea rows="5" class="textarea-medium" placeholder="请输入文本"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label v-top">文本框（大号）：</label>
+            <div class="controls">
+                <textarea rows="10" placeholder="请输入文本"></textarea>
+            </div>
+        </div>
+        @*上传文件模板*@
+        <p style="font-size:16px;line-height:1.5;padding:15px 0 10px;">上传文本框大小</p>
+        <div class="control-group">
+            <label class="control-label label-l v-top">上传文本框（中号）：</label>
+            <div class="controls file-medium">
+                <input type="file" class="id-input-file-2" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label-l v-top">上传文本框（大号）：</label>
+            <div class="controls file-large">
+                <input type="file" class="id-input-file-2" />
+            </div>
+        </div>
+        @*日期格式模板*@
+        <p style="font-size:16px;line-height:1.5;padding:15px 0 10px;">日期格式模板</p>
+        <div class="control-group">
+            <label class="control-label label-l">日期格式（只用日期）：</label>
+            <div class="controls">
+                <input type="text" class="input-medium wdate">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label-l">日期格式（具体到分秒）：</label>
+            <div class="controls">
+                <input type="text" class="input-large wdate">
+            </div>
+        </div>
+        <div style="padding-bottom:50px;"></div>
+    </form>
+</div>
+    @*上传文件样式js*@
+    <script src="../Scripts/Plugins/bootstrap/js/layout-elements.min.js"></script>
+
+    <script>
+        $('.id-input-file-2').ace_file_input({
+            no_file: '暂无文件',
+            btn_choose: '请选择',
+            btn_change: '请选择',
+            droppable: false,
+            onchange: null,
+            thumbnail: false
+        });
+        $(function () {
+            ResetContentBoxWidth();
+            $(window).resize(function () {
+                ResetContentBoxWidth();
+            });
+            function ResetContentBoxWidth() {
+                SetMainHeight("newDemo-main", "form-info", 10);
+            }
+
+        })
+
+    </script>

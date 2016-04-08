@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link type="text/css" rel="stylesheet" href="../Scripts/Plugins/NewCSS/tip.css" />
+
+<div id="newDemo-main" class="show-scoll full-width" style="overflow-y:auto">
+
+    <p>文本tooltip<i class="fa fa-question-circle text-warning" poptitle="帮助提示，鼠标轻轻悬停"></i></p>
+    <h2>情境文本颜色</h2>
+    <p class="text-default">黑色 默认字体颜色</p>
+    <p class="text-muted">灰色</p>
+    <p class="text-primary">主要</p>
+    <p class="text-success">成功提示</p>
+    <p class="text-info">信息提示</p>
+    <p class="text-warning">警告提示</p>
+    <p class="text-danger">危险提示</p>
+    <h3>信息提示</h3>
+    <div class="alert alert-default">
+        <button type="button" class="close" data-dismiss="alert"><i class="icon-remove"></i></button>
+        <p><em>1.</em>付款周期分析主要用于对店铺内客户的付款冲动期进行衡量； </p>
+        <p><em>2.</em>分析报表呈现了从下单到付款各个时间间隔的订单量分布情况,每5分钟为一个统计周期；</p>
+    </div>
+
+    <h3>普通信息提示</h3>
+    <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert"><i class="icon-remove"></i></button>
+        <p><em>1.</em>付款周期分析主要用于对店铺内客户的付款冲动期进行衡量； </p>
+        <p><em>2.</em>分析报表呈现了从下单到付款各个时间间隔的订单量分布情况,每5分钟为一个统计周期；</p>
+    </div>
+
+    <h3>成功信息提示</h3>
+    <div class="alert alert-block alert-success">
+        <button type="button" class="close" data-dismiss="alert"><i class="icon-remove"></i></button>
+        恭喜您，成功提交页面！
+    </div>
+
+    <h3>警告信息提示</h3>
+    <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert"><i class="icon-remove"></i></button>
+        确认要删除吗？删除后就不可以返回了哦！
+    </div>
+    <h3>信息提示</h3>
+    <div class="alert alert-info">报表默认呈现最近3天的付款数据，如需更多的数据，请自定义时间段，时间段越长，报表呈现的时间将越长；</div>
+    <h3>成功信息提示</h3>
+    <div class="alert alert-block alert-success"> 成功提示</div>
+    <h3>警告信息提示</h3>
+    <div class="alert alert-danger">警告提示</div>
+
+    <div class="label label-info">普通信息提示</div>
+    <div class="label label-default">默认信息提示</div>
+    <div class="label label-success">成功信息提示</div>
+    <div class="label label-warning">警告信息提示</div>
+    <div class="label label-danger">危险提示</div>
+   
+    <div style="width:100%;height:400px; position:relative;">       
+        <div class="analysis-none"><span class="fi fi-information"></span>对不起，查询不到任何相关数据</div>
+    </div>
+</div>
+<script>
+    $(function () {
+        ResetContentBoxWidth();
+        $(window).resize(function () {
+            ResetContentBoxWidth();
+        });
+        function ResetContentBoxWidth() {
+            SetMainHeight("newDemo-main", null, 10);
+        }
+
+    })
+</script>

@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="newDemo-main" class="show-scoll full-width" style="overflow-y:auto;">
+    <div class="error-cont">
+        <div class="error-word">
+            <h1>404</h1>
+            <h3>哎呀...你访问的页面不存在!</h3>
+            <a class="btn btn-big" href="#">返回首页</a>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        ResetContentBoxWidth();
+        $(window).resize(function () {
+            ResetContentBoxWidth();
+        });
+        function ResetContentBoxWidth() {
+            SetMainHeight("newDemo-main", null, 10);
+           
+        }
+        var maxHeight = $('#newDemo-main').css("max-height");
+        $(".error-cont").css("height", maxHeight);
+
+    })
+</script>

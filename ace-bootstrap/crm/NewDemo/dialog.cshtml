@@ -1,0 +1,91 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<p style="font-size:20px;line-height:1.5;padding:15px 0 10px;">弹窗大小模板</p>
+<button class="testDemo1 btn btn-danger">确定取消</button>
+<button class="testDemo2 btn btn-grey">只有确定</button>
+<button class="testDemo3 btn btn-warning">带小表单</button>
+<button class="testDemo4 btn btn-primary">带中表单</button>
+<button class="testDemo5 btn btn-success">带大表单</button>
+<script>
+    //提示弹窗包括确定取消
+    var contentStr1 = '<p class="content-part"><i class="iconfont icon-tishi"></i>您确定开始交易送积分活动，开启后，所有付款时间' +
+        '晚于当前时间的订单只要满足条件就会开始送积分？</p>',
+
+    //提示弹窗只有确定
+     contentStr2 = '<p class="content-part text-center"><i class="iconfont icon-tishi"></i>客道精灵配置保存成功！</p>';
+     //带小表单 
+    //带中表单
+    //带大表单
+
+   
+    $(".testDemo1").on('click', function () {
+        dialog({
+            title: "确认提示",
+            content: contentStr1,
+            width: 340,
+            okValue: "确定",
+            ok: function () {
+
+            },
+            cancelValue: '取消',
+            cancel: function () { }
+        }).showModal();
+    });
+    $(".testDemo2").on('click', function () {
+        dialog({
+            title: "保存提示",
+            content: contentStr2,
+            width: 280,
+            okValue: "确定",
+            cancelValue: '取消',
+            ok: function () {
+
+            }
+
+        }).showModal();
+    });
+
+    $(".testDemo3").on('click', function () {
+        dialog({
+            title: "下单提交",
+            width:600,
+            url: 'dialogFormS',
+            okValue: "保存",
+            ok: function () {
+
+            },
+            cancelValue: '返回',
+            cancel: function () { }
+        }).showModal();
+    });
+    $(".testDemo4").on('click', function () {
+        dialog({
+
+            title: "下单提交",
+            width: 680,
+            url: 'dialogFormM',
+            okValue: "保存",
+            ok: function () {
+
+            },
+            cancelValue: '返回',
+            cancel: function () { }
+        }).showModal();
+    });
+    $(".testDemo5").on('click', function () {
+        dialog({
+            title: "下单提交",
+            width: 680,
+            url: 'dialogFormL',
+            okValue: "保存",
+            ok: function () {
+
+            },
+            cancelValue: '返回',
+            cancel: function () { }
+        }).showModal();
+    });
+    </script>

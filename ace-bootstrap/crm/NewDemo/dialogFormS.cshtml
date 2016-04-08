@@ -1,0 +1,103 @@
+﻿<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/jquery.formValidator/style/validator.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/jquery.easyValidator/css/validate.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/bootstrap.min.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/font-awesome.min.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/jquery.colorbox/colorbox.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/ace.min.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/temp.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/NewCommon.css")?v=@CRMSession.CurrentCssVerNo" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/form.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/tip.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/table.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/circlebar.css")" />
+
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/artDialog/css/ui-dialog.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/newicon.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/font-awesome.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/iconfont.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/tab.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/sidebar.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/NewCSS/limits-tip.css")" />
+<link type="text/css" rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/jquery.check/xenon-core.css")" />
+<!--[if IE 7]>
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/font-awesome-ie7.min.css")" />
+    <![endif]-->
+<!--[if lte IE 8]>
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/Plugins/bootstrap/css/ace-ie.min.css")" />
+    <![endif]-->
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/jquery.check/xenon-custom.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/layout-extra.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/CRM/Common.js")?v=@CRMSession.CurrentJavascriptVerNo"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/CRM/Core.js")?v=@CRMSession.CurrentJavascriptVerNo"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/alt/alt.js")?v=@CRMSession.CurrentJavascriptVerNo"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/jquery.treeview/jquery.cookie.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/jquery.easyValidator/easy_validator.pack.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/jquery.easyValidator/jquery.bgiframe.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/jquery.colorbox/jquery.colorbox.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/bootstrap.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/layout.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/slimscroll/jquery.slimscroll.horizontal.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/jquery-ui-1.10.3.custom.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/artDialog/dialog-plus-min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/artDialog/dialog-customer.js")"></script>
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/html5shiv.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/respond.min.js")"></script>
+    <![endif]-->
+<!--[if lte IE 8]>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/Plugins/bootstrap/js/excanvas.min.js")"></script>
+    <![endif]-->
+
+
+<form class="ui-form form-horizontal" style="max-height:500px; overflow-y:auto;">
+    <div class="control-group">
+        <label class="control-label">地址选择：</label>
+        <div class="controls">
+            <span>
+                <select id="dpType">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+                省
+                <select id="dpType">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+                市
+                <select id="dpType">
+                    <option value="1">全店任意商品</option>
+                    <option value="2">以下任意商品</option>
+                </select>
+                区/县
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label v-top">上传文件（中号）：</label>
+        <div class="controls file-medium">
+            <input type="file" class="id-input-file-2" />
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label v-top">备注(文本框中号)：</label>
+        <div class="controls">
+            <textarea rows="5" class="textarea-medium" placeholder="请输入文本"></textarea>
+            <div class="show-block onShow"><i class="icon-bell"></i>我是块状提示信息</div>
+        </div>
+    </div>
+    </form>
+<script src="../Scripts/Plugins/bootstrap/js/layout-elements.min.js"></script>
+
+<script>
+    $('.id-input-file-2').ace_file_input({
+        no_file: '暂无文件',
+        btn_choose: '请选择',
+        btn_change: '请选择',
+        droppable: false,
+        onchange: null,
+        thumbnail: false
+    });
+
+</script>

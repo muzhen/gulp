@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- 权限不足提示-->
+<div id="newDemo-main"  class="show-scoll full-width" style="overflow-y:auto">
+    <div class="limits-tip fail-tip">
+        <div class="tip-content">
+            <div class="pull-left result-icon sad-icon"></div>
+            <div class="pull-left">
+                <p class="result-text">很遗憾，授权失败！</p>
+                <p class="intro-text">请仔细核对操作步骤重新授权或通过以下方式联系我们为您协助处理：</p>
+                <p class="intro-text">
+                    旺旺：南讯软件<a target="_blank" href="http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=%E5%8D%97%E8%AE%AF%E8%BD%AF%E4%BB%B6%3A%E5%B7%A8%E8%9F%B9&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                        <img border="0" src="http://amos.im.alisoft.com/online.aw?v=2&amp;uid=南讯软件:巨蟹&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                    </a>
+                </p>
+                <p class="intro-text">电话：400-009-2300</p>
+                <p class="intro-text">邮箱：<a class="font-blue2" href="mailto:service@nascent.cn">service@nascent.cn</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="limits-tip success-tip">
+        <div class="tip-content">
+            <div class="pull-left result-icon smile-icon"></div>
+            <div class="pull-left">
+                <p class="result-text">恭喜您，授权成功！</p>
+                <p class="intro-text">您可以通过下面的方式联系我们为您实施：</p>
+                <p class="intro-text">
+                    旺旺：南讯软件<a target="_blank" href="http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=%E5%8D%97%E8%AE%AF%E8%BD%AF%E4%BB%B6%3A%E5%B7%A8%E8%9F%B9&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                        <img border="0" src="http://amos.im.alisoft.com/online.aw?v=2&amp;uid=南讯软件:巨蟹&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                    </a>
+                </p>
+                <p class="intro-text">电话：400-009-2300</p>
+                <p class="intro-text">邮箱：<a class="font-blue2" href="mailto:service@nascent.cn">service@nascent.cn</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="limits-tip fail-tip">
+        <div class="tip-content">
+            <div class="pull-left result-icon sad-icon"></div>
+            <div class="pull-left">
+                <p class="result-text">很遗憾，授权失败！</p>
+                <p class="intro-text">请使用店铺主号重新授权或通过以下方式联系我们协助处理：</p>
+                <p class="intro-text">
+                    旺旺：南讯软件<a target="_blank" href="http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=%E5%8D%97%E8%AE%AF%E8%BD%AF%E4%BB%B6%3A%E5%B7%A8%E8%9F%B9&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                        <img border="0" src="http://amos.im.alisoft.com/online.aw?v=2&amp;uid=南讯软件:巨蟹&amp;site=cntaobao&amp;s=1&amp;charset=utf-8">
+                    </a>
+                </p>
+                <p class="intro-text">电话：400-009-2300</p>
+                <p class="intro-text">邮箱：<a class="font-blue2" href="mailto:service@nascent.cn">service@nascent.cn</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="limits-tip success-tip">
+        <div class="tip-content">
+            <div class="pull-left result-icon smile-icon"></div>
+            <div class="pull-left">
+                <p class="result-text">恭喜您，授权成功！</p>
+                <p class="intro-text">距授权失效还有<strong class="font-blue2">XX分XX秒</strong>.</p>
+                <p class="intro-text">请手动关闭窗口或系统在<strong class="font-yellow">X</strong>秒后自动关闭.</p>
+                <p class="intro-text">您可以选择： <a href="javascript:void(0)" class="font-blue2">关闭窗口</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="limits-tip fail-tip">
+        <div class="tip-content">
+            <div class="pull-left result-icon sad-icon"></div>
+            <div class="pull-left">
+                <p class="result-text">您的权限不足，请与您的管理员联系！</p>
+                <p class="intro-text">您可以选择： <a href="javascript:void(0)" class="font-blue2">返回上一页 </a>  |   <a href="javascript:void(0)" class="font-blue2">退出重新登陆</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 权限不足提示结束-->
+</div>
+<script>
+    $(function () {
+        ResetContentBoxWidth();
+        $(window).resize(function () {
+            ResetContentBoxWidth();
+        });        function ResetContentBoxWidth() {
+            SetMainHeight("newDemo-main", null, 10);
+        }    })
+</script>
